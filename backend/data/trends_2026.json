@@ -1,0 +1,189 @@
+{
+  "2026_spring_summer": {
+    "colors": [
+      "Sage Green",
+      "Butter Yellow",
+      "Peach",
+      "Lilac",
+      "Sky Blue",
+      "Warm Beige",
+      "Dusty Rose",
+      "Mint",
+      "Coral",
+      "Cream",
+      "Lavender",
+      "Soft Pink",
+      "Ice Blue",
+      "Pale Yellow"
+    ],
+    "silhouettes": [
+      "oversized",
+      "relaxed fit",
+      "wide-leg",
+      "cropped",
+      "flowing",
+      "A-line",
+      "boxy",
+      "tapered"
+    ],
+    "fabrics": [
+      "linen",
+      "cotton",
+      "light denim",
+      "silk",
+      "chiffon",
+      "organza",
+      "seersucker",
+      "gauze"
+    ],
+    "styles": [
+      "minimalist",
+      "coastal grandmother",
+      "boho chic",
+      "romantic",
+      "sporty casual",
+      "utility"
+    ],
+    "eastern_trends": [
+      "pastel kurtas",
+      "palazzo sets",
+      "floral dupattas",
+      "anarkali dresses",
+      "light cotton shalwar kameez",
+      "block print suits",
+      "chikankari embroidery"
+    ],
+    "western_trends": [
+      "oversized blazers",
+      "wide leg trousers",
+      "slip dresses",
+      "cropped cardigans",
+      "linen suits",
+      "tiered maxi skirts"
+    ],
+    "key_pieces": [
+      "oversized linen shirt",
+      "wide leg pants",
+      "midi slip dress",
+      "cropped cardigan",
+      "boxy blazer",
+      "tiered maxi skirt",
+      "relaxed trousers",
+      "light trench coat"
+    ],
+    "patterns": [
+      "floral",
+      "abstract",
+      "stripes",
+      "gingham",
+      "block print",
+      "pastel paisley"
+    ],
+    "accessories": [
+      "oversized sunglasses",
+      "straw bags",
+      "delicate gold jewelry",
+      "canvas tote bags",
+      "espadrilles",
+      "silk scarves"
+    ]
+  },
+  "2026_autumn_winter": {
+    "colors": [
+      "Deep Burgundy",
+      "Chocolate Brown",
+      "Forest Green",
+      "Rust Orange",
+      "Slate Blue",
+      "Charcoal",
+      "Mustard",
+      "Olive",
+      "Burgundy",
+      "Plum",
+      "Teal",
+      "Warm Gray",
+      "Caramel",
+      "Deep Purple"
+    ],
+    "silhouettes": [
+      "structured blazer",
+      "midi length",
+      "layered",
+      "tailored",
+      "oversized coat",
+      "straight leg",
+      "fitted",
+      "boxy"
+    ],
+    "fabrics": [
+      "wool",
+      "tweed",
+      "velvet",
+      "heavy cotton",
+      "corduroy",
+      "cashmere",
+      "flannel",
+      "leather"
+    ],
+    "styles": [
+      "old money",
+      "dark academia",
+      "cozy chic",
+      "power dressing",
+      "heritage",
+      "minimal luxe"
+    ],
+    "eastern_trends": [
+      "embroidered shawls",
+      "dark toned shalwar kameez",
+      "formal kurtas",
+      "velvet lehengas",
+      "woolen shawls",
+      "zardozi work",
+      "rich brocades"
+    ],
+    "western_trends": [
+      "oversized wool coats",
+      "turtleneck sweaters",
+      "pleated midi skirts",
+      "structured blazers",
+      "wide leg wool trousers",
+      "tweed suits",
+      "knee high boots"
+    ],
+    "key_pieces": [
+      "oversized wool coat",
+      "turtleneck sweater",
+      "pleated midi skirt",
+      "structured blazer",
+      "wide leg trousers",
+      "knee high boots",
+      "cashmere cardigan",
+      "leather jacket"
+    ],
+    "patterns": [
+      "houndstooth",
+      "plaid",
+      "tartan",
+      "fair isle",
+      "paisley",
+      "damask",
+      "subtle stripes"
+    ],
+    "accessories": [
+      "leather gloves",
+      "wool berets",
+      "statement belts",
+      "gold hoop earrings",
+      "structured handbags",
+      "silk pocket squares",
+      "cashmere scarves"
+    ]
+  },
+  "meta": {
+    "year": 2026,
+    "version": "1.0",
+    "last_updated": "2026-01-15",
+    "source": "Adorkable AI Fashion Intelligence"
+  }
+}

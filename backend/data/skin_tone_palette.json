@@ -1,0 +1,237 @@
+{
+  "Very Fair_Warm": {
+    "best_colors": [
+      "Cream", "Ivory", "Peach", "Warm White", "Butter Yellow", "Apricot",
+      "Salmon", "Blush Pink", "Champagne", "Beige", "Soft Coral", "Light Peach"
+    ],
+    "avoid": [
+      "Stark White", "Black", "Navy Blue", "Charcoal", "Dark Brown", "Cool Gray"
+    ],
+    "metal": ["Gold", "Rose Gold"],
+    "description": "Very fair warm skin (porcelain/peachy) glows in soft warm pastels and creamy neutrals."
+  },
+  "Very Fair_Cool": {
+    "best_colors": [
+      "Stark White", "Ice Blue", "Lavender", "Soft Pink", "Silver", "Powder Blue",
+      "Mint", "Pale Lilac", "Baby Blue", "Cool Gray", "Platinum"
+    ],
+    "avoid": [
+      "Orange", "Gold", "Rust", "Mustard", "Burnt Orange", "Warm Beige"
+    ],
+    "metal": ["Silver", "White Gold", "Platinum"],
+    "description": "Very fair cool skin (porcelain/pink) shines in cool pastels and icy tones."
+  },
+  "Very Fair_Neutral": {
+    "best_colors": [
+      "Soft White", "Cream", "Pale Gray", "Soft Pink", "Light Lavender", "Ivory",
+      "Champagne", "Taupe", "Blush", "Seafoam"
+    ],
+    "avoid": [
+      "Neon colors", "Extremely bright yellows", "Harsh black"
+    ],
+    "metal": ["Gold", "Silver", "Rose Gold"],
+    "description": "Very fair neutral skin can wear soft colors from both warm and cool families."
+  },
+  "Fair_Warm": {
+    "best_colors": [
+      "Peach", "Coral", "Warm Beige", "Camel", "Rust", "Burnt Orange", 
+      "Terracotta", "Cream", "Ivory", "Warm White", "Gold", "Butter Yellow",
+      "Apricot", "Salmon", "Blush Pink", "Dusty Rose", "Mint", "Sage Green"
+    ],
+    "avoid": [
+      "Stark White", "Cool Gray", "Slate Blue", "Navy Blue", "Deep Burgundy",
+      "Black", "Charcoal", "Ice Blue", "Lavender"
+    ],
+    "metal": ["Gold", "Rose Gold"],
+    "description": "Fair warm skin looks best in warm, earthy colors that complement golden undertones."
+  },
+  "Fair_Cool": {
+    "best_colors": [
+      "Lavender", "Ice Blue", "Mint", "Rose", "Plum", "Navy Blue", 
+      "Slate Blue", "Royal Blue", "Cobalt Blue", "Cool Gray", "Charcoal",
+      "Stark White", "Silver", "Pastel Pink", "Orchid", "Amethyst",
+      "Mauve", "Violet", "Berry", "Fuchsia"
+    ],
+    "avoid": [
+      "Orange", "Mustard", "Gold", "Rust", "Terracotta", "Camel", 
+      "Warm Beige", "Olive", "Burnt Orange", "Coral"
+    ],
+    "metal": ["Silver", "White Gold", "Platinum"],
+    "description": "Fair cool skin shines in jewel tones and cool pastels that complement pink undertones."
+  },
+  "Fair_Neutral": {
+    "best_colors": [
+      "Navy Blue", "Teal", "Jade", "Sage Green", "Soft Pink", "Lavender",
+      "Gray", "Taupe", "Cream", "Ivory", "Charcoal", "Soft White", "Rose"
+    ],
+    "avoid": [
+      "Neon colors", "Extremely bright yellows", "Overly saturated oranges"
+    ],
+    "metal": ["Gold", "Silver", "Rose Gold"],
+    "description": "Fair neutral skin can wear most colors, but soft muted tones work especially well."
+  },
+  "Light Medium_Warm": {
+    "best_colors": [
+      "Olive", "Burnt Orange", "Terracotta", "Warm Red", "Gold", "Caramel",
+      "Mustard", "Sage Green", "Forest Green", "Peach", "Coral", "Rust",
+      "Brick Red", "Camel", "Warm Beige", "Cream", "Chocolate", "Coffee",
+      "Deep Burgundy", "Emerald", "Tan", "Bronze"
+    ],
+    "avoid": [
+      "Pastel Pink", "Ice Blue", "Lavender", "Cool Gray", "Neon colors",
+      "Bright white", "Silver", "Pale Yellow"
+    ],
+    "metal": ["Gold", "Bronze", "Copper"],
+    "description": "Light medium warm (olive/tan) skin glows in rich earth tones and warm jewel colors."
+  },
+  "Light Medium_Cool": {
+    "best_colors": [
+      "Navy Blue", "Royal Blue", "Teal", "Berry", "Magenta", "Fuchsia",
+      "Plum", "Violet", "Slate Blue", "Cobalt Blue", "Charcoal", "Cool Gray",
+      "Silver", "Rose", "Orchid", "Lavender", "Ice Blue", "Deep Burgundy",
+      "Amethyst", "Purple", "Turquoise"
+    ],
+    "avoid": [
+      "Bright Yellow", "Orange", "Gold", "Rust", "Terracotta", "Olive",
+      "Mustard", "Coral", "Peach", "Bronze"
+    ],
+    "metal": ["Silver", "White Gold", "Platinum"],
+    "description": "Light medium cool (olive/rose) skin looks stunning in jewel tones and cool colors."
+  },
+  "Light Medium_Neutral": {
+    "best_colors": [
+      "Teal", "Jade", "Emerald", "Navy Blue", "Royal Blue", "Berry",
+      "Magenta", "Plum", "Olive", "Sage Green", "Forest Green", "Charcoal",
+      "Gray", "Cream", "Beige", "Taupe", "Camel", "Blush Pink", "Lavender"
+    ],
+    "avoid": [
+      "Neon yellows", "Overly bright oranges", "Extreme pastels"
+    ],
+    "metal": ["Gold", "Silver", "Rose Gold"],
+    "description": "Light medium neutral skin has flexibility to wear most colors across warm and cool spectrums."
+  },
+  "Medium_Warm": {
+    "best_colors": [
+      "Olive", "Burnt Orange", "Terracotta", "Warm Red", "Gold", "Caramel",
+      "Mustard", "Sage Green", "Forest Green", "Peach", "Coral", "Rust",
+      "Brick Red", "Camel", "Warm Beige", "Cream", "Chocolate", "Coffee",
+      "Deep Burgundy", "Emerald", "Bronze", "Copper"
+    ],
+    "avoid": [
+      "Pastel Pink", "Ice Blue", "Lavender", "Cool Gray", "Neon colors",
+      "Bright white", "Silver", "Pale Yellow"
+    ],
+    "metal": ["Gold", "Bronze", "Copper"],
+    "description": "Medium warm (golden/tan) skin glows in rich earth tones and warm jewel colors."
+  },
+  "Medium_Cool": {
+    "best_colors": [
+      "Navy Blue", "Royal Blue", "Teal", "Berry", "Magenta", "Fuchsia",
+      "Plum", "Violet", "Slate Blue", "Cobalt Blue", "Charcoal", "Cool Gray",
+      "Silver", "Rose", "Orchid", "Lavender", "Ice Blue", "Deep Burgundy",
+      "Amethyst", "Purple", "Sapphire"
+    ],
+    "avoid": [
+      "Bright Yellow", "Orange", "Gold", "Rust", "Terracotta", "Olive",
+      "Mustard", "Coral", "Peach"
+    ],
+    "metal": ["Silver", "White Gold", "Platinum"],
+    "description": "Medium cool (rose/olive) skin looks stunning in jewel tones and cool colors."
+  },
+  "Medium_Neutral": {
+    "best_colors": [
+      "Teal", "Jade", "Emerald", "Navy Blue", "Royal Blue", "Berry",
+      "Magenta", "Plum", "Olive", "Sage Green", "Forest Green", "Charcoal",
+      "Gray", "Cream", "Beige", "Taupe", "Camel", "Blush Pink", "Lavender"
+    ],
+    "avoid": [
+      "Neon yellows", "Overly bright oranges", "Extreme pastels"
+    ],
+    "metal": ["Gold", "Silver", "Rose Gold"],
+    "description": "Medium neutral skin has flexibility to wear most colors across warm and cool spectrums."
+  },
+  "Medium Dark_Warm": {
+    "best_colors": [
+      "Emerald", "Mustard", "Warm White", "Orange", "Caramel", "Gold",
+      "Cream", "Burnt Orange", "Terracotta", "Rust", "Brick Red", "Coral",
+      "Peach", "Olive", "Sage Green", "Forest Green", "Kelly Green",
+      "Camel", "Warm Beige", "Coffee", "Chocolate", "Deep Burgundy",
+      "Bronze", "Copper", "Turmeric"
+    ],
+    "avoid": [
+      "Dark Brown", "Dark Navy", "Black", "Cool Gray", "Pastel Pink",
+      "Ice Blue", "Lavender", "Silver", "Ash Gray"
+    ],
+    "metal": ["Gold", "Bronze", "Copper", "Rose Gold"],
+    "description": "Medium dark warm (caramel/brown) skin radiates in bold warm colors and rich earth tones."
+  },
+  "Medium Dark_Cool": {
+    "best_colors": [
+      "Cobalt Blue", "Fuchsia", "Ivory", "Electric Purple", "Crimson",
+      "Royal Blue", "Navy Blue", "Sapphire Blue", "Teal", "Turquoise",
+      "Berry", "Magenta", "Plum", "Amethyst", "Violet", "Silver",
+      "Charcoal", "White", "Ice Blue", "Lavender", "Orchid", "Hot Pink"
+    ],
+    "avoid": [
+      "Dark Navy", "Dark Brown", "Black", "Olive", "Mustard", "Gold",
+      "Orange", "Rust", "Terracotta", "Burnt Orange", "Bronze"
+    ],
+    "metal": ["Silver", "White Gold", "Platinum"],
+    "description": "Medium dark cool (chocolate/berry) skin looks striking in vivid jewel tones and bright cool colors."
+  },
+  "Medium Dark_Neutral": {
+    "best_colors": [
+      "Teal", "Jade", "Emerald", "Cobalt Blue", "Royal Blue", "Fuchsia",
+      "Berry", "Magenta", "Cream", "Ivory", "Charcoal", "Navy Blue",
+      "Plum", "Violet", "Gold", "Silver", "Crimson", "Deep Burgundy",
+      "Warm Beige", "Sage Green"
+    ],
+    "avoid": [
+      "Very dark brown", "Muddy colors", "Washed out pastels", "Ash Gray"
+    ],
+    "metal": ["Gold", "Silver", "Rose Gold"],
+    "description": "Medium dark neutral skin can pull off both bold warm and cool colors, creating versatile styling options."
+  },
+  "Dark_Warm": {
+    "best_colors": [
+      "Emerald", "Mustard", "Warm White", "Orange", "Caramel", "Gold",
+      "Cream", "Burnt Orange", "Terracotta", "Rust", "Brick Red", "Coral",
+      "Peach", "Olive", "Sage Green", "Forest Green", "Kelly Green",
+      "Camel", "Warm Beige", "Coffee", "Chocolate", "Deep Burgundy",
+      "Bronze", "Copper", "Turmeric", "Tangerine"
+    ],
+    "avoid": [
+      "Dark Brown", "Dark Navy", "Black", "Cool Gray", "Pastel Pink",
+      "Ice Blue", "Lavender", "Silver", "Ash Gray"
+    ],
+    "metal": ["Gold", "Bronze", "Copper", "Rose Gold"],
+    "description": "Dark warm (deep brown) skin radiates in bold warm colors and rich earth tones."
+  },
+  "Dark_Cool": {
+    "best_colors": [
+      "Cobalt Blue", "Fuchsia", "Ivory", "Electric Purple", "Crimson",
+      "Royal Blue", "Navy Blue", "Sapphire Blue", "Teal", "Turquoise",
+      "Berry", "Magenta", "Plum", "Amethyst", "Violet", "Silver",
+      "Charcoal", "White", "Ice Blue", "Lavender", "Orchid", "Hot Pink"
+    ],
+    "avoid": [
+      "Dark Navy", "Dark Brown", "Black", "Olive", "Mustard", "Gold",
+      "Orange", "Rust", "Terracotta", "Burnt Orange", "Bronze"
+    ],
+    "metal": ["Silver", "White Gold", "Platinum"],
+    "description": "Dark cool (deep berry) skin looks striking in vivid jewel tones and bright cool colors."
+  },
+  "Dark_Neutral": {
+    "best_colors": [
+      "Teal", "Jade", "Emerald", "Cobalt Blue", "Royal Blue", "Fuchsia",
+      "Berry", "Magenta", "Cream", "Ivory", "Charcoal", "Navy Blue",
+      "Plum", "Violet", "Gold", "Silver", "Crimson", "Deep Burgundy",
+      "Warm Beige", "Sage Green"
+    ],
+    "avoid": [
+      "Very dark brown", "Muddy colors", "Washed out pastels", "Ash Gray"
+    ],
+    "metal": ["Gold", "Silver", "Rose Gold"],
+    "description": "Dark neutral skin can pull off both bold warm and cool colors, creating versatile styling options."
+  }
+}

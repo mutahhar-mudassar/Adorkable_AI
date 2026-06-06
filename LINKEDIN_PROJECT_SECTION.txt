@@ -1,0 +1,14 @@
+**Project Title:** Adorkable AI — Fashion Intelligence Platform
+**Project URL:** (Add link to GitHub or live demo if you have one)
+
+**Description:**
+Adorkable AI is a production-quality, full-stack fashion intelligence web application that eliminates outfit decision fatigue. By combining computer vision, color theory, and real-time weather data, the platform curates personalized outfit recommendations that perfectly match the user's profile and environment. 
+
+**Key Features:**
+• **AI-Powered Garment Classification:** Leveraged TensorFlow and MobileNetV2 to automatically classify clothing categories and styles from uploaded images.
+• **Smart Color & Skin Tone Analysis:** Integrated MediaPipe for facial analysis to determine skin tone, paired with a K-Means dominant color extractor to recommend flattering complementary and analogous color harmonies.
+• **Weather-Aware Recommendations:** Integrated the OpenWeather API to provide outfit suggestions optimized for live temperature and weather conditions, including smart layering rules.
+• **Intelligent Planning & Analytics:** Built a 7-day weekly outfit planner, a smart combo generator for matching pieces, and an interactive analytics dashboard using Plotly for wardrobe insights.
+• **Robust Full-Stack Architecture:** Developed a secure RESTful API with FastAPI and SQLite (SQLAlchemy ORM), featuring JWT authentication, paired with an interactive and responsive frontend using Streamlit.
+
+**Skills & Technologies:** Python, FastAPI, Streamlit, TensorFlow (Keras), MediaPipe, OpenCV, SQLite, REST APIs, Computer Vision, Machine Learning.

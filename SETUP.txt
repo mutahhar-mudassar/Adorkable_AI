@@ -1,0 +1,186 @@
+========================================
+   Adorkable AI - Setup Guide
+========================================
+
+
+REQUIREMENTS
+------------
+- Windows PC
+- Python 3.11 recommended (download from https://www.python.org/downloads/)
+- During Python install: CHECK "Add Python to PATH"
+- Project folder must be at: C:\Users\YOUR_NAME\Downloads\adorkable_ai
+
+
+========================================
+STEP 1 - Open PowerShell
+========================================
+
+Press Windows + R, type "powershell", press Enter
+
+
+========================================
+STEP 2 - Go to project folder
+========================================
+
+cd C:\Users\YOUR_NAME\Downloads\adorkable_ai
+
+(replace YOUR_NAME with your Windows username)
+
+
+========================================
+STEP 3 - Create virtual environment
+========================================
+
+python -m venv venv
+
+
+========================================
+STEP 4 - Activate virtual environment
+========================================
+
+venv\Scripts\activate
+
+You should see (venv) at the start of the line.
+Always do this before running anything.
+
+
+========================================
+STEP 5 - Install all dependencies
+========================================
+
+python -m pip install --upgrade pip
+pip install uvicorn fastapi sqlalchemy python-multipart python-dotenv requests aiofiles
+pip install aiosqlite python-jose passlib pydantic[email]
+pip install bcrypt==4.0.1
+pip install opencv-python Pillow
+pip install tensorflow
+pip install scikit-learn
+pip install keras numpy plotly httpx pytest
+pip install mediapipe
+pip install streamlit
+
+
+========================================
+STEP 6 - Setup .env file
+========================================
+
+cd adorkable_ai
+copy .env.example .env
+notepad .env
+
+Fill in the following values and save:
+
+--------------------------------------------------
+OPENWEATHER_API_KEY = your_openweathermap_api_key_here   or use mine c3fb930c4bf5804229e75cfd206908f8
+  > Get a FREE key at: https://openweathermap.org/api
+  > Sign up -> go to "My API Keys" -> copy the key
+  > Paste it here
+
+SECRET_KEY = your_jwt_secret_key_here_minimum_32_chars_long
+  > Replace with any random text, minimum 32 characters
+
+  > Example: myapp_super_secret_key_abc123xyz789_2024
+
+DATABASE_URL = sqlite:///./adorkable.db
+  > LEAVE AS IS - do not change
+
+MODEL_PATH = ./models/clothing_classifier
+  > LEAVE AS IS - do not change
+
+UPLOAD_DIR = ./uploads
+  > LEAVE AS IS - do not change
+--------------------------------------------------
+
+
+========================================
+STEP 7 - Start Backend (Terminal 1)
+========================================
+
+Open a NEW PowerShell window and run:
+
+cd C:\Users\YOUR_NAME\Downloads\adorkable_ai
+venv\Scripts\activate
+cd adorkable_ai
+python start_backend_port8006.py            port 8006 is mandatory
+
+Wait until you see:
+  Uvicorn running on http://127.0.0.1:8006
+  Application startup complete.
+
+
+========================================
+STEP 8 - Start Frontend (Terminal 2)
+========================================
+
+Open ANOTHER NEW PowerShell window and run:
+
+cd C:\Users\YOUR_NAME\Downloads\adorkable_ai
+venv\Scripts\activate
+cd adorkable_ai\frontend
+python -m streamlit run app.py
+
+Wait until you see:
+  Local URL: http://localhost:8501
+
+
+========================================
+STEP 9 - Open Browser
+========================================
+
+Go to: http://localhost:8501
+
+
+========================================
+COMMON ERRORS AND FIXES
+========================================
+
+ERROR: No module named 'fastapi' or any module
+FIX: You forgot to activate venv. Run: venv\Scripts\activate
+
+ERROR: Internal server error on Register/Login
+FIX: Wrong bcrypt version. Run: pip install bcrypt==4.0.1
+
+ERROR: Could not open requirements.txt
+FIX: You are in the wrong folder. Make sure you are inside
+     adorkable_ai\adorkable_ai\ not adorkable_ai\
+
+ERROR: tensorflow==2.16.1 not found
+FIX: Your Python is too new. Run: pip install tensorflow
+     (without version number, installs latest compatible)
+
+ERROR: mediapipe==0.10.14 not found
+FIX: Run: pip install mediapipe
+     (without version number)
+
+ERROR: venv\Scripts\activate certificate error
+FIX: You are trying to activate from the wrong folder.
+     The venv must be activated from the OUTER adorkable_ai folder,
+     not the inner one.
+
+ERROR: Frontend says "Internal server error"
+FIX: Make sure backend is running on port 8006
+     Check frontend/app.py has: API_BASE = "http://localhost:8006/api/v1"
+
+
+========================================
+EVERY TIME YOU WANT TO RUN THE APP
+========================================
+
+Terminal 1 (Backend):
+  cd C:\Users\YOUR_NAME\Downloads\adorkable_ai
+  venv\Scripts\activate
+  cd adorkable_ai
+  python start_backend_port8006.py
+
+Terminal 2 (Frontend):
+  cd C:\Users\YOUR_NAME\Downloads\adorkable_ai
+  venv\Scripts\activate
+  cd adorkable_ai\frontend
+  python -m streamlit run app.py
+
+Then open: http://localhost:8501
+
+
+========================================
+   Made for Adorkable AI v1.0.0
+========================================

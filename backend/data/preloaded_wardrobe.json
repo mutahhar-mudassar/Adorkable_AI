@@ -1,0 +1,5341 @@
+{
+  "items": [
+    {
+      "id": "starter_white_shirt",
+      "title": "White Shirt",
+      "image_path": "backend/data/preloaded_images/white_shirt.png",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F1F1F1",
+      "occasion_tags": [
+        "Formal",
+        "Business"
+      ],
+      "search_tags": [
+        "shirt",
+        "formal",
+        "office",
+        "minimal",
+        "western"
+      ],
+      "target_gender": "unisex"
+    },
+    {
+      "id": "starter_navy_jeans",
+      "title": "Navy Jeans",
+      "image_path": "backend/data/preloaded_images/navy_jeans.png",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "slim",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1F3A66",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "daily",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "starter_beige_blazer",
+      "title": "Beige Blazer",
+      "image_path": "backend/data/preloaded_images/beige_blazer.png",
+      "fabric_weight": "medium-heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "structured",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Beige",
+      "color_hex": "#CDBE9D",
+      "occasion_tags": [
+        "Formal",
+        "Business"
+      ],
+      "search_tags": [
+        "blazer",
+        "office",
+        "formal",
+        "layering",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "starter_black_coat",
+      "title": "Black Coat",
+      "image_path": "backend/data/preloaded_images/black_coat.png",
+      "fabric_weight": "medium-heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "longline",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "Winter"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#2D2D2D",
+      "occasion_tags": [
+        "Formal",
+        "Casual"
+      ],
+      "search_tags": [
+        "coat",
+        "winter",
+        "layering",
+        "formal",
+        "western"
+      ],
+      "target_gender": "unisex"
+    },
+    {
+      "id": "starter_olive_kurta",
+      "title": "Olive Kurta",
+      "image_path": "backend/data/preloaded_images/olive_kurta.png",
+      "fabric_weight": "light-medium",
+      "category": "ethnic_top",
+      "tradition": "Eastern",
+      "silhouette": "straight",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Festival"
+      ],
+      "dominant_color": "Olive",
+      "color_hex": "#7A7D46",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Festive"
+      ],
+      "search_tags": [
+        "kurta",
+        "ethnic",
+        "traditional",
+        "eastern",
+        "festival"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "starter_gray_skirt",
+      "title": "Gray Skirt",
+      "image_path": "backend/data/preloaded_images/gray_skirt.png",
+      "fabric_weight": "light-medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "knee",
+      "season_tags": [
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "Gray",
+      "color_hex": "#8A8A90",
+      "occasion_tags": [
+        "Casual",
+        "Formal"
+      ],
+      "search_tags": [
+        "skirt",
+        "office",
+        "western",
+        "a-line"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "starter_black_dress",
+      "title": "Black Dress",
+      "image_path": "backend/data/preloaded_images/black_dress.png",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "fit-and-flare",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "knee",
+      "season_tags": [
+        "All Season",
+        "Party"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#2B2B2F",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "one-piece",
+        "party",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "starter_denim_jacket",
+      "title": "Denim Jacket",
+      "image_path": "backend/data/preloaded_images/denim_jacket.png",
+      "fabric_weight": "medium-heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Blue",
+      "color_hex": "#3D5F8C",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "denim",
+        "jacket",
+        "casual",
+        "layering",
+        "western"
+      ],
+      "target_gender": "unisex"
+    },
+    {
+      "id": "starter_white_sneakers",
+      "title": "White Sneakers",
+      "image_path": "backend/data/preloaded_images/white_sneakers.png",
+      "fabric_weight": "light",
+      "category": "shoes",
+      "tradition": "Western",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#EDEDED",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "sneakers",
+        "footwear",
+        "casual",
+        "western"
+      ],
+      "target_gender": "unisex"
+    },
+    {
+      "id": "starter_brown_bag",
+      "title": "Brown Bag",
+      "image_path": "backend/data/preloaded_images/brown_bag.png",
+      "fabric_weight": "medium",
+      "category": "accessory",
+      "tradition": "Western",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#7D4F37",
+      "occasion_tags": [
+        "Casual",
+        "Formal"
+      ],
+      "search_tags": [
+        "bag",
+        "accessory",
+        "formal",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "starter_beige_trousers",
+      "title": "Beige Trousers",
+      "image_path": "backend/data/preloaded_images/beige_trousers.png",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Beige",
+      "color_hex": "#CCBA93",
+      "occasion_tags": [
+        "Formal",
+        "Business"
+      ],
+      "search_tags": [
+        "trousers",
+        "office",
+        "formal",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "starter_tshirt",
+      "title": "Black T-Shirt",
+      "image_path": "backend/data/preloaded_images/black_tshirt.png",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "basic",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "half",
+      "season_tags": [
+        "Summer",
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#2B2B2F",
+      "occasion_tags": [
+        "Casual",
+        "Party"
+      ],
+      "search_tags": [
+        "tshirt",
+        "basic",
+        "casual",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "starter_black_shirt",
+      "title": "Black Shirt",
+      "image_path": "backend/data/preloaded_images/black_shirt.png",
+      "fabric_weight": "medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#2B2B2F",
+      "occasion_tags": [
+        "Formal",
+        "Party"
+      ],
+      "search_tags": [
+        "shirt",
+        "formal",
+        "party",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "starter_blue_jean",
+      "title": "Blue Jean",
+      "image_path": "backend/data/preloaded_images/blue_jean.png",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Blue",
+      "color_hex": "#89CFF0",
+      "occasion_tags": [
+        "Formal",
+        "Party",
+        "Casual"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "casual",
+        "western"
+      ],
+      "target_gender": "unisex"
+    },
+    {
+      "id": "light_blue_oxford_shirt",
+      "title": "Light Blue Oxford Shirt",
+      "image_path": "backend/data/preloaded_images/light_blue_oxford_shirt.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Light Blue",
+      "color_hex": "#A8C8E8",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "shirt",
+        "oxford",
+        "button-down",
+        "light blue",
+        "casual",
+        "western",
+        "H&M"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "brown_flannel_shirt",
+      "title": "Brown Flannel Shirt",
+      "image_path": "backend/data/preloaded_images/brown_flannel_shirt.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "trim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#5C2E1A",
+      "occasion_tags": [
+        "Casual",
+        "Business"
+      ],
+      "search_tags": [
+        "shirt",
+        "flannel",
+        "brown",
+        "button-down",
+        "autumn",
+        "western",
+        "Nordstrom"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "navy_oxford_shirt",
+      "title": "Navy Oxford Shirt",
+      "image_path": "backend/data/preloaded_images/navy_oxford_shirt.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2744",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Formal"
+      ],
+      "search_tags": [
+        "shirt",
+        "oxford",
+        "navy",
+        "button-down",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "olive_dress_shirt",
+      "title": "Olive Dress Shirt",
+      "image_path": "backend/data/preloaded_images/olive_dress_shirt.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Olive",
+      "color_hex": "#6B7A45",
+      "occasion_tags": [
+        "Casual",
+        "Business"
+      ],
+      "search_tags": [
+        "shirt",
+        "olive",
+        "dress shirt",
+        "slim fit",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "olive_camp_shirt",
+      "title": "Olive Camp Shirt",
+      "image_path": "backend/data/preloaded_images/olive_camp_shirt.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "oversized",
+      "pattern": "solid",
+      "sleeve_length": "half",
+      "season_tags": [
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "Olive",
+      "color_hex": "#7A8A5A",
+      "occasion_tags": [
+        "Casual"
+      ],
+      "search_tags": [
+        "shirt",
+        "camp collar",
+        "bowling shirt",
+        "olive",
+        "short sleeve",
+        "summer",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "navy_stripe_shirt",
+      "title": "Navy Stripe Shirt",
+      "image_path": "backend/data/preloaded_images/navy_stripe_shirt.jpeg",
+      "fabric_weight": "medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "regular",
+      "pattern": "striped",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1B2A5E",
+      "occasion_tags": [
+        "Casual",
+        "Business"
+      ],
+      "search_tags": [
+        "shirt",
+        "striped",
+        "navy",
+        "white stripe",
+        "button-down",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "white_pinstripe_shirt",
+      "title": "White Pinstripe Shirt",
+      "image_path": "backend/data/preloaded_images/white_pinstripe_shirt.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "oversized",
+      "pattern": "pinstripe",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F2EC",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "shirt",
+        "pinstripe",
+        "white",
+        "ami paris",
+        "luxury",
+        "designer",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "navy_pinstripe_blazer",
+      "title": "Navy Pinstripe Blazer",
+      "image_path": "backend/data/preloaded_images/navy_pinstripe_blazer.jpeg",
+      "fabric_weight": "heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "structured",
+      "fit": "oversized",
+      "pattern": "pinstripe",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2540",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "blazer",
+        "pinstripe",
+        "navy",
+        "double breasted",
+        "saint laurent",
+        "luxury",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "beige_pleated_trousers",
+      "title": "Beige Pleated Trousers",
+      "image_path": "backend/data/preloaded_images/beige_pleated_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Beige",
+      "color_hex": "#C4B89A",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Casual"
+      ],
+      "search_tags": [
+        "trousers",
+        "pleated",
+        "beige",
+        "wide leg",
+        "formal",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "navy_pinstripe_trousers",
+      "title": "Navy Pinstripe Trousers",
+      "image_path": "backend/data/preloaded_images/navy_pinstripe_trousers.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "pinstripe",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2540",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "trousers",
+        "pinstripe",
+        "navy",
+        "wide leg",
+        "formal",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "dark_brown_blouson",
+      "title": "Dark Brown Blouson Jacket",
+      "image_path": "backend/data/preloaded_images/dark_brown_blouson.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Dark Brown",
+      "color_hex": "#2E1A0E",
+      "occasion_tags": [
+        "Casual",
+        "Party"
+      ],
+      "search_tags": [
+        "jacket",
+        "blouson",
+        "brown",
+        "zip",
+        "cropped",
+        "casual",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "black_wide_trousers",
+      "title": "Black Wide-Leg Trousers",
+      "image_path": "backend/data/preloaded_images/black_wide_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#2B2B2F",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Party",
+        "Casual"
+      ],
+      "search_tags": [
+        "trousers",
+        "wide leg",
+        "black",
+        "formal",
+        "western"
+      ],
+      "target_gender": "unisex"
+    },
+    {
+      "id": "black_knit_vest",
+      "title": "Black Cable-Knit Vest",
+      "image_path": "backend/data/preloaded_images/black_knit_vest.jpeg",
+      "fabric_weight": "medium",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "cable-knit",
+      "sleeve_length": "sleeveless",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1E1E1E",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "vest",
+        "knit",
+        "sweater vest",
+        "cable knit",
+        "black",
+        "layering",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "pink_lace_cocktail_dress",
+      "title": "Pink Lace Cocktail Dress",
+      "image_path": "backend/data/preloaded_images/pink_lace_cocktail_dress.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "fit-and-flare",
+      "fit": "regular",
+      "pattern": "lace",
+      "sleeve_length": "three-quarter",
+      "hem_length": "knee",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Party"
+      ],
+      "dominant_color": "Pink",
+      "color_hex": "#E8A0A8",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "lace",
+        "pink",
+        "cocktail",
+        "party",
+        "bell sleeve",
+        "fit and flare",
+        "bridesmaid",
+        "vintage",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "brown_plaid_vintage_swing_dress",
+      "title": "Brown Plaid Vintage Swing Dress",
+      "image_path": "backend/data/preloaded_images/brown_plaid_vintage_swing_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "plaid",
+      "sleeve_length": "full",
+      "hem_length": "mini",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#5C4020",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "plaid",
+        "brown",
+        "vintage",
+        "swing",
+        "bow tie",
+        "1960s",
+        "button",
+        "academic",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "pink_pinafore_dress",
+      "title": "Pink Pinafore Dress",
+      "image_path": "backend/data/preloaded_images/pink_pinafore_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "hem_length": "midi",
+      "season_tags": [
+        "Spring",
+        "Autumn"
+      ],
+      "dominant_color": "Dusty Pink",
+      "color_hex": "#C98A90",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "pinafore",
+        "pink",
+        "double breasted",
+        "midi",
+        "layered",
+        "blouse",
+        "vintage",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_sparkle_wedding_gown",
+      "title": "White Sparkle Wedding Gown",
+      "image_path": "backend/data/preloaded_images/white_sparkle_wedding_gown.jpeg",
+      "fabric_weight": "heavy",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "ball-gown",
+      "fit": "regular",
+      "pattern": "embellished",
+      "sleeve_length": "full",
+      "hem_length": "floor",
+      "season_tags": [
+        "All Season",
+        "Festival"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F2EC",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "wedding",
+        "gown",
+        "white",
+        "sparkle",
+        "sequin",
+        "ball gown",
+        "high neck",
+        "modest",
+        "bridal",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+
+    {
+      "id": "beige_floral_printed_hijab",
+      "title": "Beige Floral Printed Hijab",
+      "image_path": "backend/data/preloaded_images/beige_floral_printed_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "floral",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "All Season"
+      ],
+      "dominant_color": "Beige",
+      "color_hex": "#D4C4A0",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Festive",
+        "Business"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "beige",
+        "floral",
+        "printed",
+        "brooch",
+        "modest",
+        "islamic",
+        "traditional",
+        "eastern",
+        "elegant"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "blue_floral_printed_hijab",
+      "title": "Blue Floral Printed Hijab",
+      "image_path": "backend/data/preloaded_images/blue_floral_printed_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "floral",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "All Season"
+      ],
+      "dominant_color": "Steel Blue",
+      "color_hex": "#5A7A9A",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "blue",
+        "floral",
+        "printed",
+        "nature",
+        "modest",
+        "islamic",
+        "traditional",
+        "eastern",
+        "botanical"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "terracotta_chiffon_hijab",
+      "title": "Terracotta Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/terracotta_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season",
+        "Autumn",
+        "Spring"
+      ],
+      "dominant_color": "Terracotta",
+      "color_hex": "#CC6633",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "terracotta",
+        "orange",
+        "rust",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "eastern",
+        "instant hijab"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "steel_blue_chiffon_hijab",
+      "title": "Steel Blue Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/steel_blue_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Steel Blue",
+      "color_hex": "#5A7A9A",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "steel blue",
+        "blue grey",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "traditional",
+        "eastern",
+        "long wrap"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "navy_blue_chiffon_hijab",
+      "title": "Navy Blue Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/navy_blue_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1F3A66",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "navy",
+        "dark blue",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "traditional",
+        "eastern"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "burgundy_chiffon_shawl_scarf",
+      "title": "Burgundy Chiffon Shawl Scarf",
+      "image_path": "backend/data/preloaded_images/burgundy_chiffon_shawl_scarf.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season",
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Burgundy",
+      "color_hex": "#722F37",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Festive"
+      ],
+      "search_tags": [
+        "hijab",
+        "scarf",
+        "shawl",
+        "burgundy",
+        "wine",
+        "maroon",
+        "chiffon",
+        "solid",
+        "modest",
+        "eastern",
+        "lightweight"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "navy_chiffon_shawl_scarf",
+      "title": "Navy Chiffon Shawl Scarf",
+      "image_path": "backend/data/preloaded_images/navy_chiffon_shawl_scarf.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1B2A5E",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "scarf",
+        "shawl",
+        "navy",
+        "dark blue",
+        "chiffon",
+        "solid",
+        "modest",
+        "eastern",
+        "lightweight",
+        "breathable"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_chiffon_hijab",
+      "title": "Black Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/black_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "black",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "traditional",
+        "eastern",
+        "ruffle neck"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "maroon_ribbed_hijab",
+      "title": "Maroon Ribbed Hijab",
+      "image_path": "backend/data/preloaded_images/maroon_ribbed_hijab.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "ribbed",
+      "season_tags": [
+        "All Season",
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Maroon",
+      "color_hex": "#5C1010",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "maroon",
+        "dark red",
+        "ribbed",
+        "jersey",
+        "solid",
+        "modest",
+        "islamic",
+        "traditional",
+        "eastern"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_lace_ball_gown",
+      "title": "White Lace Ball Gown",
+      "image_path": "backend/data/preloaded_images/white_lace_ball_gown.jpeg",
+      "fabric_weight": "heavy",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "ball-gown",
+      "fit": "regular",
+      "pattern": "lace",
+      "sleeve_length": "full",
+      "hem_length": "floor",
+      "season_tags": [
+        "All Season",
+        "Festival"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F8F6F0",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "wedding",
+        "gown",
+        "white",
+        "lace",
+        "ball gown",
+        "high neck",
+        "cape",
+        "modest",
+        "bridal",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_blazer_maxi_dress",
+      "title": "White Blazer Maxi Dress",
+      "image_path": "backend/data/preloaded_images/white_blazer_maxi_dress.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "structured",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "hem_length": "floor",
+      "season_tags": [
+        "Spring",
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F0EDE6",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "blazer dress",
+        "white",
+        "structured",
+        "maxi",
+        "button",
+        "floor length",
+        "formal",
+        "bridal",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_fur_trim_coat_dress",
+      "title": "White Fur Trim Coat Dress",
+      "image_path": "backend/data/preloaded_images/white_fur_trim_coat_dress.jpeg",
+      "fabric_weight": "heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "embroidered",
+      "sleeve_length": "full",
+      "hem_length": "midi",
+      "season_tags": [
+        "Winter"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F4F2EE",
+      "occasion_tags": [
+        "Formal",
+        "Wedding",
+        "Festive",
+        "Party"
+      ],
+      "search_tags": [
+        "coat",
+        "fur",
+        "white",
+        "embroidered",
+        "winter",
+        "outerwear",
+        "bridal",
+        "luxury",
+        "floral embroidery",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+     {
+      "id": "tan_belted_shirt_blouse",
+      "title": "Tan Belted Shirt Blouse",
+      "image_path": "backend/data/preloaded_images/tan_belted_shirt_blouse.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "peplum",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter",
+        "Spring"
+      ],
+      "dominant_color": "Tan",
+      "color_hex": "#B8956A",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Formal"
+      ],
+      "search_tags": [
+        "blouse",
+        "tan",
+        "belted",
+        "shirt",
+        "collared",
+        "button down",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "blue_stripe_sailor_peplum_blouse",
+      "title": "Blue Stripe Sailor Peplum Blouse",
+      "image_path": "backend/data/preloaded_images/blue_stripe_sailor_peplum_blouse.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "peplum",
+      "fit": "relaxed",
+      "pattern": "striped",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Light Blue",
+      "color_hex": "#A8C8E8",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "blouse",
+        "blue stripe",
+        "sailor collar",
+        "peplum",
+        "babydoll",
+        "ribbon tie",
+        "cottagecore",
+        "women",
+        "western",
+        "Narika"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_lace_collar_chiffon_blouse",
+      "title": "White Lace Collar Chiffon Blouse",
+      "image_path": "backend/data/preloaded_images/white_lace_collar_chiffon_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F5F0",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Party"
+      ],
+      "search_tags": [
+        "blouse",
+        "white",
+        "lace collar",
+        "peter pan collar",
+        "chiffon",
+        "pearl button",
+        "ruffle cuff",
+        "cottagecore",
+        "feminine",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_bow_ruffle_sleeve_blouse",
+      "title": "White Bow Ruffle Sleeve Blouse",
+      "image_path": "backend/data/preloaded_images/white_bow_ruffle_sleeve_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F8F6F0",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Party"
+      ],
+      "search_tags": [
+        "blouse",
+        "white",
+        "bow neck",
+        "ruffle sleeve",
+        "puff sleeve",
+        "balloon sleeve",
+        "romantic",
+        "cottagecore",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_floral_applique_sleeve_shirt",
+      "title": "White Floral Appliqué Sleeve Shirt",
+      "image_path": "backend/data/preloaded_images/white_floral_applique_sleeve_shirt.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "regular",
+      "pattern": "embellished",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F5F5",
+      "occasion_tags": [
+        "Casual",
+        "Party",
+        "Formal"
+      ],
+      "search_tags": [
+        "shirt",
+        "white",
+        "floral applique",
+        "3D flower",
+        "lace sleeve",
+        "statement sleeve",
+        "button down",
+        "collared",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_peter_pan_puff_sleeve_shirt",
+      "title": "White Peter Pan Puff Sleeve Shirt",
+      "image_path": "backend/data/preloaded_images/white_peter_pan_puff_sleeve_shirt.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F5F5",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Party"
+      ],
+      "search_tags": [
+        "shirt",
+        "white",
+        "peter pan collar",
+        "puff sleeve",
+        "balloon sleeve",
+        "crystal button",
+        "rhinestone",
+        "cropped",
+        "women",
+        "western",
+        "Zara"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_highwaist_pleated_midi_skirt",
+      "title": "Black High-Waist Pleated Midi Skirt",
+      "image_path": "backend/data/preloaded_images/black_highwaist_pleated_midi_skirt.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "midi",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business"
+      ],
+      "search_tags": [
+        "skirt",
+        "black",
+        "high waist",
+        "pleated",
+        "midi",
+        "a-line",
+        "circle skirt",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "gray_highwaist_pleated_maxi_skirt",
+      "title": "Gray High-Waist Pleated Maxi Skirt",
+      "image_path": "backend/data/preloaded_images/gray_highwaist_pleated_maxi_skirt.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "season_tags": [
+        "Autumn",
+        "Winter",
+        "Spring"
+      ],
+      "dominant_color": "Gray",
+      "color_hex": "#A0A0A0",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business"
+      ],
+      "search_tags": [
+        "skirt",
+        "gray",
+        "high waist",
+        "pleated",
+        "maxi",
+        "a-line",
+        "modest",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "ivory_pearl_button_aline_midi_skirt",
+      "title": "Ivory Pearl Button A-Line Midi Skirt",
+      "image_path": "backend/data/preloaded_images/ivory_pearl_button_aline_midi_skirt.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "midi",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Ivory",
+      "color_hex": "#EAE4D5",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "skirt",
+        "ivory",
+        "beige",
+        "pearl button",
+        "a-line",
+        "midi",
+        "elegant",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "light_blue_star_patch_wide_leg_jeans",
+      "title": "Light Blue Star Patch Wide-Leg Jeans",
+      "image_path": "backend/data/preloaded_images/light_blue_star_patch_wide_leg_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "patchwork",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Light Blue",
+      "color_hex": "#A8C8E8",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "light blue",
+        "star patch",
+        "patchwork",
+        "wide leg",
+        "y2k",
+        "streetwear",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "light_wash_distressed_wide_leg_jeans",
+      "title": "Light Wash Distressed Wide-Leg Jeans",
+      "image_path": "backend/data/preloaded_images/light_wash_distressed_wide_leg_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Light Blue",
+      "color_hex": "#B8D0E8",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "light wash",
+        "distressed",
+        "ripped",
+        "wide leg",
+        "casual",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "light_blue_straight_wide_leg_jeans",
+      "title": "Light Blue Straight Wide-Leg Jeans",
+      "image_path": "backend/data/preloaded_images/light_blue_straight_wide_leg_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Light Blue",
+      "color_hex": "#A8C0DC",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Business"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "light blue",
+        "straight",
+        "wide leg",
+        "minimal",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "cream_mushroom_raglan_crop_tee",
+      "title": "Cream Mushroom Raglan Crop Tee",
+      "image_path": "backend/data/preloaded_images/cream_mushroom_raglan_crop_tee.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "slim",
+      "pattern": "graphic",
+      "sleeve_length": "half",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Cream",
+      "color_hex": "#F0EAD6",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear",
+        "Academic"
+      ],
+      "search_tags": [
+        "tshirt",
+        "crop top",
+        "mushroom",
+        "graphic",
+        "raglan",
+        "brown sleeve",
+        "cottagecore",
+        "y2k",
+        "women",
+        "western",
+        "SweatyRocks"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "sage_green_chiffon_hijab",
+      "title": "Sage Green Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/sage_green_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "All Season"
+      ],
+      "dominant_color": "Sage Green",
+      "color_hex": "#8FAF7A",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "sage green",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "eastern",
+        "lightweight"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "olive_chiffon_hijab",
+      "title": "Olive Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/olive_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Olive",
+      "color_hex": "#7A7A30",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "olive",
+        "khaki",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "eastern",
+        "lightweight"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "pink_chiffon_hijab",
+      "title": "Pink Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/pink_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season",
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "Pink",
+      "color_hex": "#CC5A8A",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Festive"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "pink",
+        "magenta",
+        "hot pink",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "eastern",
+        "vibrant"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "yellow_chiffon_hijab",
+      "title": "Yellow Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/yellow_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "All Season"
+      ],
+      "dominant_color": "Yellow",
+      "color_hex": "#F5F080",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Festive"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "yellow",
+        "lemon",
+        "pastel",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "eastern",
+        "bright"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "rust_chiffon_hijab",
+      "title": "Rust Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/rust_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season",
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Rust",
+      "color_hex": "#A04020",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "rust",
+        "terracotta",
+        "burnt orange",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "eastern"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "sky_blue_chiffon_hijab",
+      "title": "Sky Blue Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/sky_blue_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season",
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "Sky Blue",
+      "color_hex": "#88B8D0",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "sky blue",
+        "baby blue",
+        "light blue",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "eastern",
+        "soft"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "gray_chiffon_hijab",
+      "title": "Gray Chiffon Hijab",
+      "image_path": "backend/data/preloaded_images/gray_chiffon_hijab.jpeg",
+      "fabric_weight": "light",
+      "category": "hijab",
+      "tradition": "Eastern",
+      "silhouette": "wrap",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Gray",
+      "color_hex": "#8A8A98",
+      "occasion_tags": [
+        "Casual",
+        "Formal",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "hijab",
+        "headscarf",
+        "gray",
+        "grey",
+        "chiffon",
+        "solid",
+        "modest",
+        "islamic",
+        "eastern",
+        "neutral",
+        "Veiled"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_crystal_cape_gown",
+      "title": "Black Crystal Cape Gown",
+      "image_path": "backend/data/preloaded_images/black_crystal_cape_gown.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "ball-gown",
+      "fit": "regular",
+      "pattern": "embellished",
+      "sleeve_length": "cape",
+      "hem_length": "floor",
+      "season_tags": [
+        "All Season",
+        "Party"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "gown",
+        "black",
+        "crystal",
+        "cape",
+        "ball gown",
+        "high neck",
+        "embellished",
+        "pearl",
+        "luxury",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "blue_tweed_jacket_skirt_set",
+      "title": "Blue Tweed Jacket Skirt Set",
+      "image_path": "backend/data/preloaded_images/blue_tweed_jacket_skirt_set.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "tweed",
+      "sleeve_length": "full",
+      "hem_length": "midi",
+      "season_tags": [
+        "Autumn",
+        "Winter",
+        "Spring"
+      ],
+      "dominant_color": "Light Blue",
+      "color_hex": "#B0C8D8",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "tweed",
+        "set",
+        "blue",
+        "jacket",
+        "skirt",
+        "midi",
+        "pearl button",
+        "co-ord",
+        "elegant",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_floral_organza_dress",
+      "title": "White Floral Organza Dress",
+      "image_path": "backend/data/preloaded_images/white_floral_organza_dress.jpeg",
+      "fabric_weight": "light",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "floral",
+      "sleeve_length": "full",
+      "hem_length": "midi",
+      "season_tags": [
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F5F5",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "floral",
+        "organza",
+        "white",
+        "blue flowers",
+        "sheer sleeves",
+        "midi",
+        "belt",
+        "elegant",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_ruffle_floral_skirt_set",
+      "title": "White Ruffle Top Floral Skirt Set",
+      "image_path": "backend/data/preloaded_images/white_ruffle_floral_skirt_set.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "floral",
+      "sleeve_length": "sleeveless",
+      "hem_length": "midi",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Party"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F5F5",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "set",
+        "ruffle",
+        "floral",
+        "white",
+        "black floral",
+        "midi skirt",
+        "two piece",
+        "co-ord",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "pink_off_shoulder_bow_dress",
+      "title": "Pink Off-Shoulder Bow Dress",
+      "image_path": "backend/data/preloaded_images/pink_off_shoulder_bow_dress.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "sleeveless",
+      "hem_length": "midi",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Party"
+      ],
+      "dominant_color": "Pink",
+      "color_hex": "#F0A0A8",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "pink",
+        "off shoulder",
+        "asymmetrical",
+        "bow",
+        "ruched",
+        "midi",
+        "elegant",
+        "summer",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "brown_pinafore_dress",
+      "title": "Brown Pinafore Dress",
+      "image_path": "backend/data/preloaded_images/brown_pinafore_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "hem_length": "midi",
+      "season_tags": [
+        "Autumn",
+        "Winter",
+        "Spring"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#8B6040",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "pinafore",
+        "brown",
+        "double breasted",
+        "midi",
+        "layered",
+        "blouse",
+        "vintage",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "pink_corset_laceup_dress",
+      "title": "Pink Corset Lace-Up Dress",
+      "image_path": "backend/data/preloaded_images/pink_corset_laceup_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "fit-and-flare",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "hem_length": "mini",
+      "season_tags": [
+        "All Season",
+        "Party"
+      ],
+      "dominant_color": "Pink",
+      "color_hex": "#E8A0A8",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "corset",
+        "lace up",
+        "pink",
+        "mini",
+        "two tone",
+        "white blouse",
+        "shirt dress",
+        "trendy",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "sage_prairie_maxi_dress",
+      "title": "Sage Prairie Maxi Dress",
+      "image_path": "backend/data/preloaded_images/sage_prairie_maxi_dress.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "hem_length": "floor",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Sage Green",
+      "color_hex": "#8A9A70",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "prairie",
+        "sage",
+        "green",
+        "maxi",
+        "ruffle",
+        "smocked waist",
+        "cottagecore",
+        "modest",
+        "tiered",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_satin_tulle_gown",
+      "title": "Black Satin Tulle Gown",
+      "image_path": "backend/data/preloaded_images/black_satin_tulle_gown.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "ball-gown",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "hem_length": "floor",
+      "season_tags": [
+        "All Season",
+        "Party"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "gown",
+        "black",
+        "satin",
+        "tulle",
+        "ball gown",
+        "high neck",
+        "puff sleeve",
+        "elegant",
+        "formal",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_cream_contrast_maxi_dress",
+      "title": "Black & Cream Contrast Maxi Dress",
+      "image_path": "backend/data/preloaded_images/black_cream_contrast_maxi_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "color-block",
+      "sleeve_length": "full",
+      "hem_length": "floor",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "maxi",
+        "black",
+        "cream",
+        "contrast",
+        "balloon sleeve",
+        "high neck",
+        "color block",
+        "floor length",
+        "elegant",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "brown_knotted_waist_maxi_dress",
+      "title": "Brown Knotted Waist Maxi Dress",
+      "image_path": "backend/data/preloaded_images/brown_knotted_waist_maxi_dress.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "hem_length": "floor",
+      "season_tags": [
+        "All Season",
+        "Spring",
+        "Autumn"
+      ],
+      "dominant_color": "Chocolate Brown",
+      "color_hex": "#5C2E10",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "maxi",
+        "brown",
+        "knotted waist",
+        "twisted waist",
+        "modest",
+        "floor length",
+        "balloon sleeve",
+        "satin",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "brown_tshirt",
+      "title": "Brown T-Shirt",
+      "image_path": "backend/data/preloaded_images/brown_tshirt.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "basic",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "half",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#8B5E3C",
+      "occasion_tags": [
+        "Casual"
+      ],
+      "search_tags": [
+        "tshirt",
+        "brown",
+        "solid",
+        "basic",
+        "casual",
+        "western",
+        "SHEIN"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "brown_waffle_polo",
+      "title": "Brown Waffle Knit Polo",
+      "image_path": "backend/data/preloaded_images/brown_waffle_polo.jpeg",
+      "fabric_weight": "medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "waffle-knit",
+      "sleeve_length": "half",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#6B4C35",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "polo",
+        "waffle knit",
+        "brown",
+        "pocket",
+        "casual",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "black_leather_jacket",
+      "title": "Black Slim-Fit Leather Jacket",
+      "image_path": "backend/data/preloaded_images/black_leather_jacket.jpeg",
+      "fabric_weight": "heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "structured",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Party"
+      ],
+      "search_tags": [
+        "leather jacket",
+        "black",
+        "slim fit",
+        "zip",
+        "biker",
+        "western",
+        "ZADVO"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "burgundy_oversized_tshirt",
+      "title": "Burgundy Oversized T-Shirt",
+      "image_path": "backend/data/preloaded_images/burgundy_oversized_tshirt.jpeg",
+      "fabric_weight": "medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "oversized",
+      "fit": "oversized",
+      "pattern": "solid",
+      "sleeve_length": "half",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Burgundy",
+      "color_hex": "#6D1A2A",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "tshirt",
+        "burgundy",
+        "oversized",
+        "streetwear",
+        "cotton",
+        "casual",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "burgundy_henley_longsleeve",
+      "title": "Burgundy Long-Sleeve Henley",
+      "image_path": "backend/data/preloaded_images/burgundy_henley_longsleeve.jpeg",
+      "fabric_weight": "medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "basic",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Burgundy",
+      "color_hex": "#5C1A2A",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "henley",
+        "burgundy",
+        "long sleeve",
+        "casual",
+        "western",
+        "L.L.Bean"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "navy_cable_knit_polo",
+      "title": "Navy Cable-Knit Polo",
+      "image_path": "backend/data/preloaded_images/navy_cable_knit_polo.jpeg",
+      "fabric_weight": "medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "cable-knit",
+      "sleeve_length": "half",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2744",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "polo",
+        "cable knit",
+        "navy",
+        "knit polo",
+        "old money",
+        "J.Crew",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "white_hokage_cloak",
+      "title": "White Hokage Cloak",
+      "image_path": "backend/data/preloaded_images/white_hokage_cloak.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "outerwear",
+      "tradition": "Japanese",
+      "silhouette": "longline",
+      "fit": "regular",
+      "pattern": "printed",
+      "sleeve_length": "half",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F5F5",
+      "occasion_tags": [
+        "Cosplay",
+        "Themed Event"
+      ],
+      "search_tags": [
+        "cloak",
+        "hokage",
+        "naruto",
+        "minato",
+        "cosplay",
+        "anime",
+        "white",
+        "japanese"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "navy_henley_longsleeve",
+      "title": "Navy Long-Sleeve Henley",
+      "image_path": "backend/data/preloaded_images/navy_henley_longsleeve.jpeg",
+      "fabric_weight": "medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "basic",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1F3A66",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "henley",
+        "navy",
+        "long sleeve",
+        "casual",
+        "western",
+        "AIOPESON"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "black_henley_longsleeve",
+      "title": "Black Slim-Fit Long-Sleeve Henley",
+      "image_path": "backend/data/preloaded_images/black_henley_longsleeve.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "basic",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Party"
+      ],
+      "search_tags": [
+        "henley",
+        "black",
+        "slim fit",
+        "long sleeve",
+        "casual",
+        "western",
+        "Amazon Essentials"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "brown_b3_bomber_jacket",
+      "title": "Brown B-3 Sheepskin Bomber Jacket",
+      "image_path": "backend/data/preloaded_images/brown_b3_bomber_jacket.jpeg",
+      "fabric_weight": "heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "structured",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Winter"
+      ],
+      "dominant_color": "Dark Brown",
+      "color_hex": "#3B1F0E",
+      "occasion_tags": [
+        "Casual",
+        "Outdoor"
+      ],
+      "search_tags": [
+        "bomber jacket",
+        "b3",
+        "sheepskin",
+        "shearling",
+        "brown",
+        "military",
+        "vintage",
+        "western",
+        "Schott"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "burgundy_ribbed_sweater",
+      "title": "Burgundy Ribbed Sweater",
+      "image_path": "backend/data/preloaded_images/burgundy_ribbed_sweater.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "ribbed",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Burgundy",
+      "color_hex": "#5A1A2B",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "sweater",
+        "ribbed",
+        "burgundy",
+        "crewneck",
+        "knit",
+        "western",
+        "Banana Republic"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "black_halfzip_sweatshirt",
+      "title": "Black Half-Zip Sweatshirt",
+      "image_path": "backend/data/preloaded_images/black_halfzip_sweatshirt.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "oversized",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "sweatshirt",
+        "half zip",
+        "black",
+        "fleece",
+        "casual",
+        "layering",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "olive_ribbed_sweater",
+      "title": "Olive Ribbed Crewneck Sweater",
+      "image_path": "backend/data/preloaded_images/olive_ribbed_sweater.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "ribbed",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Olive",
+      "color_hex": "#3B4A2F",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Business"
+      ],
+      "search_tags": [
+        "sweater",
+        "ribbed",
+        "olive",
+        "crewneck",
+        "knit",
+        "western",
+        "Uniqlo"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "black_laceup_medieval_shirt",
+      "title": "Black Lace-Up Medieval Shirt",
+      "image_path": "backend/data/preloaded_images/black_laceup_medieval_shirt.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Medieval European",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Cosplay",
+        "Themed Event",
+        "Casual"
+      ],
+      "search_tags": [
+        "lace up shirt",
+        "medieval",
+        "pirate",
+        "viking",
+        "renaissance",
+        "costume",
+        "black",
+        "JEMITOP"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "olive_camp_collar_shirt",
+      "title": "Olive Camp Collar Shirt",
+      "image_path": "backend/data/preloaded_images/olive_camp_collar_shirt.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "half",
+      "season_tags": [
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "Olive",
+      "color_hex": "#6B7A45",
+      "occasion_tags": [
+        "Casual"
+      ],
+      "search_tags": [
+        "camp collar",
+        "olive",
+        "short sleeve",
+        "button down",
+        "summer",
+        "western",
+        "SHEIN"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "olive_corduroy_pleated_trousers",
+      "title": "Olive Corduroy Pleated Trousers",
+      "image_path": "backend/data/preloaded_images/olive_corduroy_pleated_trousers.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "tapered",
+      "fit": "relaxed",
+      "pattern": "corduroy",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Olive",
+      "color_hex": "#3B4A2F",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Business"
+      ],
+      "search_tags": [
+        "corduroy",
+        "trousers",
+        "olive",
+        "pleated",
+        "tapered",
+        "western",
+        "WTAPS"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "gray_barrel_joggers",
+      "title": "Gray Barrel Joggers",
+      "image_path": "backend/data/preloaded_images/gray_barrel_joggers.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "barrel",
+      "fit": "oversized",
+      "pattern": "solid",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Gray",
+      "color_hex": "#A0A0A0",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "joggers",
+        "barrel",
+        "gray",
+        "oversized",
+        "y2k",
+        "streetwear",
+        "casual",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "stone_flat_front_dress_pants",
+      "title": "Stone Flat Front Dress Pants",
+      "image_path": "backend/data/preloaded_images/stone_flat_front_dress_pants.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Stone",
+      "color_hex": "#E8E4DC",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Casual"
+      ],
+      "search_tags": [
+        "dress pants",
+        "stone",
+        "flat front",
+        "chinos",
+        "formal",
+        "western",
+        "Berle",
+        "Nordstrom"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "blue_tailored_trousers",
+      "title": "Blue Tailored Trousers",
+      "image_path": "backend/data/preloaded_images/blue_tailored_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Blue",
+      "color_hex": "#3A5A8C",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "trousers",
+        "blue",
+        "tailored",
+        "formal",
+        "suit pants",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "dark_indigo_straight_jeans",
+      "title": "Dark Indigo Straight Jeans",
+      "image_path": "backend/data/preloaded_images/dark_indigo_straight_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Dark Indigo",
+      "color_hex": "#1A2040",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "dark indigo",
+        "straight",
+        "raw denim",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "medium_wash_slim_jeans",
+      "title": "Medium Wash Slim Jeans",
+      "image_path": "backend/data/preloaded_images/medium_wash_slim_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "slim",
+      "fit": "slim",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Medium Blue",
+      "color_hex": "#3A6090",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "slim",
+        "medium wash",
+        "faded",
+        "western",
+        "Nudie Jeans"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "black_loose_fit_joggers",
+      "title": "Black Loose Fit Joggers",
+      "image_path": "backend/data/preloaded_images/black_loose_fit_joggers.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear",
+        "Academic"
+      ],
+      "search_tags": [
+        "joggers",
+        "black",
+        "loose fit",
+        "sweatpants",
+        "casual",
+        "western",
+        "H&M"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "brown_slim_dress_trousers",
+      "title": "Brown Slim Dress Trousers",
+      "image_path": "backend/data/preloaded_images/brown_slim_dress_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "slim",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#7A5C3A",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Casual"
+      ],
+      "search_tags": [
+        "trousers",
+        "brown",
+        "slim",
+        "dress pants",
+        "formal",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "gray_slim_jeans",
+      "title": "Gray Slim Jeans",
+      "image_path": "backend/data/preloaded_images/gray_slim_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "slim",
+      "fit": "slim",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Gray",
+      "color_hex": "#7A7A7A",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Business"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "gray",
+        "slim fit",
+        "grey denim",
+        "western",
+        "Mango"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "brown_baggy_jeans",
+      "title": "Brown Baggy Jeans",
+      "image_path": "backend/data/preloaded_images/brown_baggy_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#5C3A1E",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "brown",
+        "baggy",
+        "casual",
+        "western",
+        "Hollister"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "black_wide_leg_jeans",
+      "title": "Black Wide-Leg Jeans",
+      "image_path": "backend/data/preloaded_images/black_wide_leg_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear",
+        "Party"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "black",
+        "wide leg",
+        "casual",
+        "western",
+        "H&M"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "black_baggy_jeans",
+      "title": "Black Baggy Jeans",
+      "image_path": "backend/data/preloaded_images/black_baggy_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "oversized",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "black",
+        "baggy",
+        "oversized",
+        "casual",
+        "western",
+        "H&M"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "burgundy_wide_leg_corduroy_pants",
+      "title": "Burgundy Wide-Leg Corduroy Pants",
+      "image_path": "backend/data/preloaded_images/burgundy_wide_leg_corduroy_pants.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "corduroy",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Burgundy",
+      "color_hex": "#6D1A2A",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Party"
+      ],
+      "search_tags": [
+        "corduroy",
+        "pants",
+        "burgundy",
+        "wide leg",
+        "casual",
+        "western"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "navy_oversized_joggers",
+      "title": "Navy Oversized Joggers",
+      "image_path": "backend/data/preloaded_images/navy_oversized_joggers.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "tapered",
+      "fit": "oversized",
+      "pattern": "solid",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#2A3F5F",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "joggers",
+        "navy",
+        "oversized",
+        "sweatpants",
+        "casual",
+        "western",
+        "Superdry"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "brown_wide_leg_corduroy_pants",
+      "title": "Brown Wide-Leg Corduroy Pants",
+      "image_path": "backend/data/preloaded_images/brown_wide_leg_corduroy_pants.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "corduroy",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#5C3A1E",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "corduroy",
+        "pants",
+        "brown",
+        "wide leg",
+        "vintage",
+        "casual",
+        "western",
+        "Polo Ralph Lauren"
+      ],
+      "target_gender": "male"
+    },
+    {
+      "id": "forest_green_pleated_blouse",
+      "title": "Forest Green Pleated Blouse",
+      "image_path": "backend/data/preloaded_images/forest_green_pleated_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter",
+        "Spring"
+      ],
+      "dominant_color": "Forest Green",
+      "color_hex": "#1A4A2E",
+      "occasion_tags": [
+        "Business",
+        "Formal",
+        "Casual"
+      ],
+      "search_tags": [
+        "blouse",
+        "forest green",
+        "pleated",
+        "puff sleeve",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "brown_lace_trim_peplum_blouse",
+      "title": "Brown Lace Trim Peplum Blouse",
+      "image_path": "backend/data/preloaded_images/brown_lace_trim_peplum_blouse.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "peplum",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#8B5E3C",
+      "occasion_tags": [
+        "Casual",
+        "Party",
+        "Business"
+      ],
+      "search_tags": [
+        "blouse",
+        "brown",
+        "lace trim",
+        "peplum",
+        "balloon sleeve",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "red_faux_leather_biker_jacket",
+      "title": "Red Faux Leather Biker Jacket",
+      "image_path": "backend/data/preloaded_images/red_faux_leather_biker_jacket.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "structured",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Red",
+      "color_hex": "#8B1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Party"
+      ],
+      "search_tags": [
+        "leather jacket",
+        "red",
+        "faux leather",
+        "biker",
+        "moto",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_cropped_cable_knit_turtleneck",
+      "title": "White Cropped Cable-Knit Turtleneck",
+      "image_path": "backend/data/preloaded_images/white_cropped_cable_knit_turtleneck.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "oversized",
+      "pattern": "cable-knit",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F5F0",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "sweater",
+        "white",
+        "cropped",
+        "cable knit",
+        "turtleneck",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "brown_corduroy_belted_peplum_top",
+      "title": "Brown Corduroy Belted Peplum Top",
+      "image_path": "backend/data/preloaded_images/brown_corduroy_belted_peplum_top.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "peplum",
+      "fit": "regular",
+      "pattern": "corduroy",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#5C3A1E",
+      "occasion_tags": [
+        "Business",
+        "Casual",
+        "Formal"
+      ],
+      "search_tags": [
+        "top",
+        "brown",
+        "corduroy",
+        "belted",
+        "peplum",
+        "balloon sleeve",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "dark_brown_asymmetric_stud_sweater",
+      "title": "Dark Brown Asymmetric Stud Sweater",
+      "image_path": "backend/data/preloaded_images/dark_brown_asymmetric_stud_sweater.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Dark Brown",
+      "color_hex": "#2E1A0E",
+      "occasion_tags": [
+        "Casual",
+        "Party",
+        "Business"
+      ],
+      "search_tags": [
+        "sweater",
+        "dark brown",
+        "asymmetric",
+        "gold stud",
+        "cropped",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "gray_turtleneck_gold_button_sweater",
+      "title": "Gray Turtleneck Gold Button Sweater",
+      "image_path": "backend/data/preloaded_images/gray_turtleneck_gold_button_sweater.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "oversized",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Gray",
+      "color_hex": "#6A6A6A",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Business"
+      ],
+      "search_tags": [
+        "sweater",
+        "gray",
+        "turtleneck",
+        "gold button",
+        "cropped",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "navy_peplum_button_down_blouse",
+      "title": "Navy Peplum Button-Down Blouse",
+      "image_path": "backend/data/preloaded_images/navy_peplum_button_down_blouse.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "peplum",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2744",
+      "occasion_tags": [
+        "Business",
+        "Formal",
+        "Casual"
+      ],
+      "search_tags": [
+        "blouse",
+        "navy",
+        "peplum",
+        "button down",
+        "work",
+        "women",
+        "western",
+        "Grace Karin"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_pleated_longsleeve_blouse",
+      "title": "Black Pleated Long-Sleeve Blouse",
+      "image_path": "backend/data/preloaded_images/black_pleated_longsleeve_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Business",
+        "Formal",
+        "Casual"
+      ],
+      "search_tags": [
+        "blouse",
+        "black",
+        "pleated",
+        "long sleeve",
+        "chiffon",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "navy_wool_asymmetric_zip_jacket",
+      "title": "Navy Wool Asymmetric Zip Jacket",
+      "image_path": "backend/data/preloaded_images/navy_wool_asymmetric_zip_jacket.jpeg",
+      "fabric_weight": "heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "structured",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2744",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "jacket",
+        "navy",
+        "wool blend",
+        "asymmetric zip",
+        "biker",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "navy_belted_cape_blouse",
+      "title": "Navy Belted Cape Blouse",
+      "image_path": "backend/data/preloaded_images/navy_belted_cape_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "cape",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2744",
+      "occasion_tags": [
+        "Party",
+        "Formal",
+        "Business"
+      ],
+      "search_tags": [
+        "blouse",
+        "navy",
+        "cape",
+        "belted",
+        "chiffon",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "pink_moto_zip_jacket",
+      "title": "Pink Moto Zip Jacket",
+      "image_path": "backend/data/preloaded_images/pink_moto_zip_jacket.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "structured",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Pink",
+      "color_hex": "#C4909A",
+      "occasion_tags": [
+        "Casual",
+        "Party"
+      ],
+      "search_tags": [
+        "jacket",
+        "pink",
+        "moto",
+        "zip",
+        "biker",
+        "women",
+        "western",
+        "LE3NO"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "burgundy_cropped_cable_knit_sweater",
+      "title": "Burgundy Cropped Cable-Knit Sweater",
+      "image_path": "backend/data/preloaded_images/burgundy_cropped_cable_knit_sweater.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "regular",
+      "pattern": "cable-knit",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Burgundy",
+      "color_hex": "#6D1A2A",
+      "occasion_tags": [
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "sweater",
+        "burgundy",
+        "cropped",
+        "cable knit",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "purple_ribbed_turtleneck_sweater",
+      "title": "Purple Ribbed Turtleneck Sweater",
+      "image_path": "backend/data/preloaded_images/purple_ribbed_turtleneck_sweater.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "oversized",
+      "pattern": "ribbed",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Purple",
+      "color_hex": "#6A1A8B",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Party"
+      ],
+      "search_tags": [
+        "sweater",
+        "purple",
+        "ribbed",
+        "turtleneck",
+        "cropped",
+        "merino",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "cream_puff_sleeve_fitted_shirt",
+      "title": "Cream Puff Sleeve Fitted Shirt",
+      "image_path": "backend/data/preloaded_images/cream_puff_sleeve_fitted_shirt.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Cream",
+      "color_hex": "#F5F0E0",
+      "occasion_tags": [
+        "Business",
+        "Formal",
+        "Casual"
+      ],
+      "search_tags": [
+        "shirt",
+        "cream",
+        "puff sleeve",
+        "fitted",
+        "old money",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "brown_boucle_asymmetric_neck_sweater",
+      "title": "Brown Boucl\u00e9 Asymmetric Neck Sweater",
+      "image_path": "backend/data/preloaded_images/brown_boucle_asymmetric_neck_sweater.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "cropped",
+      "fit": "oversized",
+      "pattern": "boucle",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#7A5C3A",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "sweater",
+        "brown",
+        "boucle",
+        "asymmetric neck",
+        "cropped",
+        "women",
+        "western",
+        "Proenza Schouler"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "royal_blue_ruffle_bow_blouse",
+      "title": "Royal Blue Ruffle Bow Blouse",
+      "image_path": "backend/data/preloaded_images/royal_blue_ruffle_bow_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Royal Blue",
+      "color_hex": "#2A52BE",
+      "occasion_tags": [
+        "Casual",
+        "Party",
+        "Formal"
+      ],
+      "search_tags": [
+        "blouse",
+        "royal blue",
+        "ruffle",
+        "bow",
+        "chiffon",
+        "women",
+        "western",
+        "SHEIN"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_cinched_waist_button_down_shirt",
+      "title": "Black Cinched Waist Button-Down Shirt",
+      "image_path": "backend/data/preloaded_images/black_cinched_waist_button_down_shirt.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "shirt",
+        "black",
+        "cinched waist",
+        "button down",
+        "collared",
+        "women",
+        "western",
+        "SHEIN"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "green_pearl_collar_chiffon_blouse",
+      "title": "Green Pearl Collar Chiffon Blouse",
+      "image_path": "backend/data/preloaded_images/green_pearl_collar_chiffon_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Green",
+      "color_hex": "#1A6B3A",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Formal"
+      ],
+      "search_tags": [
+        "blouse",
+        "green",
+        "pearl collar",
+        "chiffon",
+        "puff sleeve",
+        "women",
+        "western",
+        "SHEIN"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "burgundy_self_tie_frill_blouse",
+      "title": "Burgundy Self-Tie Frill Blouse",
+      "image_path": "backend/data/preloaded_images/burgundy_self_tie_frill_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Burgundy",
+      "color_hex": "#6D1A2A",
+      "occasion_tags": [
+        "Casual",
+        "Party",
+        "Formal"
+      ],
+      "search_tags": [
+        "blouse",
+        "burgundy",
+        "self tie",
+        "frill",
+        "bow collar",
+        "women",
+        "western",
+        "SHEIN"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "purple_floral_mesh_tunic_blouse",
+      "title": "Purple Floral Mesh Tunic Blouse",
+      "image_path": "backend/data/preloaded_images/purple_floral_mesh_tunic_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "floral",
+      "sleeve_length": "three-quarter",
+      "season_tags": [
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "Purple",
+      "color_hex": "#5A1A8B",
+      "occasion_tags": [
+        "Casual",
+        "Party"
+      ],
+      "search_tags": [
+        "tunic",
+        "purple",
+        "floral",
+        "mesh",
+        "v-neck",
+        "three quarter sleeve",
+        "women",
+        "western",
+        "VALOLIA"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_cinched_waist_puff_sleeve_shirt",
+      "title": "White Cinched Waist Puff Sleeve Shirt",
+      "image_path": "backend/data/preloaded_images/white_cinched_waist_puff_sleeve_shirt.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "tailored",
+      "fit": "slim",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F5F5",
+      "occasion_tags": [
+        "Business",
+        "Casual",
+        "Academic"
+      ],
+      "search_tags": [
+        "shirt",
+        "white",
+        "cinched waist",
+        "puff sleeve",
+        "button down",
+        "women",
+        "western",
+        "SHEIN"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_textured_asymmetric_zip_jacket",
+      "title": "Black Textured Asymmetric Zip Jacket",
+      "image_path": "backend/data/preloaded_images/black_textured_asymmetric_zip_jacket.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "outerwear",
+      "tradition": "Western",
+      "silhouette": "structured",
+      "fit": "slim",
+      "pattern": "textured",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Party",
+        "Business"
+      ],
+      "search_tags": [
+        "jacket",
+        "black",
+        "textured",
+        "asymmetric zip",
+        "biker",
+        "moto",
+        "women",
+        "western",
+        "Temu"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "pink_balloon_sleeve_blouse",
+      "title": "Pink Balloon Sleeve Blouse",
+      "image_path": "backend/data/preloaded_images/pink_balloon_sleeve_blouse.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Pink",
+      "color_hex": "#D4A0B0",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Formal"
+      ],
+      "search_tags": [
+        "blouse",
+        "pink",
+        "balloon sleeve",
+        "tie cuff",
+        "women",
+        "western",
+        "Primark"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_mesh_vneck_bell_sleeve_tunic",
+      "title": "Black Mesh V-Neck Bell Sleeve Tunic",
+      "image_path": "backend/data/preloaded_images/black_mesh_vneck_bell_sleeve_tunic.jpeg",
+      "fabric_weight": "light",
+      "category": "top",
+      "tradition": "Western",
+      "silhouette": "relaxed",
+      "fit": "regular",
+      "pattern": "solid",
+      "sleeve_length": "three-quarter",
+      "season_tags": [
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Party"
+      ],
+      "search_tags": [
+        "tunic",
+        "black",
+        "mesh",
+        "v-neck",
+        "bell sleeve",
+        "women",
+        "western",
+        "VALOLIA"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_highwaist_pleated_wide_leg_pants",
+      "title": "Black High-Waist Pleated Wide-Leg Pants",
+      "image_path": "backend/data/preloaded_images/black_highwaist_pleated_wide_leg_pants.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "trousers",
+        "black",
+        "high waist",
+        "pleated",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "green_ombre_baggy_jeans",
+      "title": "Green Ombre Baggy Jeans",
+      "image_path": "backend/data/preloaded_images/green_ombre_baggy_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "barrel",
+      "fit": "oversized",
+      "pattern": "ombre",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Green",
+      "color_hex": "#3A6B3A",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "green",
+        "ombre",
+        "baggy",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "pink_ombre_baggy_jeans",
+      "title": "Pink Ombre Baggy Jeans",
+      "image_path": "backend/data/preloaded_images/pink_ombre_baggy_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "barrel",
+      "fit": "oversized",
+      "pattern": "ombre",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Pink",
+      "color_hex": "#C4909A",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "pink",
+        "ombre",
+        "baggy",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "taupe_draped_wrap_wide_leg_pants",
+      "title": "Taupe Draped Wrap Wide-Leg Pants",
+      "image_path": "backend/data/preloaded_images/taupe_draped_wrap_wide_leg_pants.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Taupe",
+      "color_hex": "#8B7D6B",
+      "occasion_tags": [
+        "Formal",
+        "Party",
+        "Business"
+      ],
+      "search_tags": [
+        "trousers",
+        "taupe",
+        "draped",
+        "wrap",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "dark_brown_highwaist_pleated_wide_leg_trousers",
+      "title": "Dark Brown High-Waist Pleated Wide-Leg Trousers",
+      "image_path": "backend/data/preloaded_images/dark_brown_highwaist_pleated_wide_leg_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Dark Brown",
+      "color_hex": "#2E1A0E",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Casual"
+      ],
+      "search_tags": [
+        "trousers",
+        "dark brown",
+        "high waist",
+        "pleated",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "burgundy_wide_leg_trousers",
+      "title": "Burgundy Wide-Leg Trousers",
+      "image_path": "backend/data/preloaded_images/burgundy_wide_leg_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Burgundy",
+      "color_hex": "#6D1A2A",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Casual"
+      ],
+      "search_tags": [
+        "trousers",
+        "burgundy",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "pink_bow_detail_wide_leg_pants",
+      "title": "Pink Bow Detail Wide-Leg Pants",
+      "image_path": "backend/data/preloaded_images/pink_bow_detail_wide_leg_pants.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "Pink",
+      "color_hex": "#D4A0B0",
+      "occasion_tags": [
+        "Party",
+        "Casual"
+      ],
+      "search_tags": [
+        "pants",
+        "pink",
+        "bow detail",
+        "cutout",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "light_wash_bow_detail_cargo_jeans",
+      "title": "Light Wash Bow Detail Cargo Jeans",
+      "image_path": "backend/data/preloaded_images/light_wash_bow_detail_cargo_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Light Blue",
+      "color_hex": "#A8C8E8",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "light wash",
+        "bow detail",
+        "cargo",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "dark_indigo_highwaist_wide_leg_jeans",
+      "title": "Dark Indigo High-Waist Wide-Leg Jeans",
+      "image_path": "backend/data/preloaded_images/dark_indigo_highwaist_wide_leg_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Dark Indigo",
+      "color_hex": "#1A2040",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Academic"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "dark indigo",
+        "high waist",
+        "wide leg",
+        "women",
+        "western",
+        "SLVRLAKE"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "brown_curved_leg_wide_jeans",
+      "title": "Brown Curved-Leg Wide Jeans",
+      "image_path": "backend/data/preloaded_images/brown_curved_leg_wide_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#5C3A1E",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "brown",
+        "curved leg",
+        "wide",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "purple_highwaist_pleated_wide_leg_trousers",
+      "title": "Purple High-Waist Pleated Wide-Leg Trousers",
+      "image_path": "backend/data/preloaded_images/purple_highwaist_pleated_wide_leg_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Purple",
+      "color_hex": "#6A1A8B",
+      "occasion_tags": [
+        "Formal",
+        "Party",
+        "Business"
+      ],
+      "search_tags": [
+        "trousers",
+        "purple",
+        "high waist",
+        "pleated",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "beige_flare_wide_leg_trousers",
+      "title": "Beige Flare Wide-Leg Trousers",
+      "image_path": "backend/data/preloaded_images/beige_flare_wide_leg_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "flare",
+      "fit": "regular",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Beige",
+      "color_hex": "#C4B89A",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "trousers",
+        "beige",
+        "flare",
+        "wide leg",
+        "women",
+        "western",
+        "Gabriela Hearst"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "olive_highwaist_wide_leg_trousers",
+      "title": "Olive High-Waist Wide-Leg Trousers",
+      "image_path": "backend/data/preloaded_images/olive_highwaist_wide_leg_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Olive",
+      "color_hex": "#4A5A2F",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Casual"
+      ],
+      "search_tags": [
+        "trousers",
+        "olive",
+        "high waist",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_highwaist_wide_leg_jeans",
+      "title": "Black High-Waist Wide-Leg Jeans",
+      "image_path": "backend/data/preloaded_images/black_highwaist_wide_leg_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "black",
+        "high waist",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "lavender_highwaist_wide_leg_trousers",
+      "title": "Lavender High-Waist Wide-Leg Trousers",
+      "image_path": "backend/data/preloaded_images/lavender_highwaist_wide_leg_trousers.jpeg",
+      "fabric_weight": "medium",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Lavender",
+      "color_hex": "#B09FCC",
+      "occasion_tags": [
+        "Formal",
+        "Party",
+        "Business"
+      ],
+      "search_tags": [
+        "trousers",
+        "lavender",
+        "high waist",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "white_lace_waist_wide_leg_pants",
+      "title": "White Lace Waist Wide-Leg Pants",
+      "image_path": "backend/data/preloaded_images/white_lace_waist_wide_leg_pants.jpeg",
+      "fabric_weight": "light",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "Spring",
+        "Summer"
+      ],
+      "dominant_color": "White",
+      "color_hex": "#F5F5F5",
+      "occasion_tags": [
+        "Formal",
+        "Party",
+        "Casual"
+      ],
+      "search_tags": [
+        "pants",
+        "white",
+        "lace waist",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "navy_wool_wide_leg_trousers",
+      "title": "Navy Wool Wide-Leg Trousers",
+      "image_path": "backend/data/preloaded_images/navy_wool_wide_leg_trousers.jpeg",
+      "fabric_weight": "heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2744",
+      "occasion_tags": [
+        "Formal",
+        "Business",
+        "Party"
+      ],
+      "search_tags": [
+        "trousers",
+        "navy",
+        "wool",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "gray_washed_cargo_wide_leg_jeans",
+      "title": "Gray Washed Cargo Wide-Leg Jeans",
+      "image_path": "backend/data/preloaded_images/gray_washed_cargo_wide_leg_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Gray",
+      "color_hex": "#6A6A6A",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "gray",
+        "washed",
+        "cargo",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_washed_cargo_wide_leg_jeans",
+      "title": "Black Washed Cargo Wide-Leg Jeans",
+      "image_path": "backend/data/preloaded_images/black_washed_cargo_wide_leg_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Casual",
+        "Streetwear",
+        "Party"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "black",
+        "washed",
+        "cargo",
+        "wide leg",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "medium_wash_highwaist_wide_leg_jeans",
+      "title": "Medium Wash High-Waist Wide-Leg Jeans",
+      "image_path": "backend/data/preloaded_images/medium_wash_highwaist_wide_leg_jeans.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "bottom",
+      "tradition": "Western",
+      "silhouette": "wide-leg",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Medium Blue",
+      "color_hex": "#3A6090",
+      "occasion_tags": [
+        "Casual",
+        "Academic",
+        "Business"
+      ],
+      "search_tags": [
+        "jeans",
+        "denim",
+        "medium wash",
+        "high waist",
+        "wide leg",
+        "women",
+        "western",
+        "SLVRLAKE"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "royal_blue_bow_neck_aline_dress",
+      "title": "Royal Blue Bow Neck A-Line Dress",
+      "image_path": "backend/data/preloaded_images/royal_blue_bow_neck_aline_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "fitted",
+      "pattern": "solid",
+      "hem_length": "midi",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter",
+        "Spring"
+      ],
+      "dominant_color": "Royal Blue",
+      "color_hex": "#2A52BE",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "royal blue",
+        "bow neck",
+        "a-line",
+        "puff sleeve",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "dark_burgundy_balloon_sleeve_maxi_dress",
+      "title": "Dark Burgundy Balloon Sleeve Maxi Dress",
+      "image_path": "backend/data/preloaded_images/dark_burgundy_balloon_sleeve_maxi_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "relaxed",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Dark Burgundy",
+      "color_hex": "#3D0A14",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "dark burgundy",
+        "balloon sleeve",
+        "maxi",
+        "belted",
+        "women",
+        "western",
+        "STAUD"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "navy_vintage_belted_aline_dress",
+      "title": "Navy Vintage Belted A-Line Dress",
+      "image_path": "backend/data/preloaded_images/navy_vintage_belted_aline_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "fitted",
+      "pattern": "solid",
+      "hem_length": "midi",
+      "sleeve_length": "three-quarter",
+      "season_tags": [
+        "Autumn",
+        "Winter",
+        "Spring"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2744",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "navy",
+        "vintage",
+        "belted",
+        "a-line",
+        "midi",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "ivory_satin_cape_sleeve_maxi_gown",
+      "title": "Ivory Satin Cape Sleeve Maxi Gown",
+      "image_path": "backend/data/preloaded_images/ivory_satin_cape_sleeve_maxi_gown.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "sleeve_length": "cape",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Ivory",
+      "color_hex": "#F5F0E0",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "gown",
+        "ivory",
+        "satin",
+        "cape sleeve",
+        "maxi",
+        "elegant",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "navy_satin_cape_sleeve_maxi_gown",
+      "title": "Navy Satin Cape Sleeve Maxi Gown",
+      "image_path": "backend/data/preloaded_images/navy_satin_cape_sleeve_maxi_gown.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "sleeve_length": "cape",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Navy Blue",
+      "color_hex": "#1A2744",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "gown",
+        "navy",
+        "satin",
+        "cape sleeve",
+        "maxi",
+        "elegant",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "burgundy_bow_collar_aline_knit_dress",
+      "title": "Burgundy Bow Collar A-Line Knit Dress",
+      "image_path": "backend/data/preloaded_images/burgundy_bow_collar_aline_knit_dress.jpeg",
+      "fabric_weight": "medium-heavy",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "fitted",
+      "pattern": "solid",
+      "hem_length": "midi",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Autumn",
+        "Winter"
+      ],
+      "dominant_color": "Burgundy",
+      "color_hex": "#6D1A2A",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "burgundy",
+        "bow collar",
+        "a-line",
+        "knit",
+        "midi",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_ruffle_tiered_victorian_maxi_dress",
+      "title": "Black Ruffle Tiered Victorian Maxi Dress",
+      "image_path": "backend/data/preloaded_images/black_ruffle_tiered_victorian_maxi_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Victorian",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "black",
+        "ruffle",
+        "tiered",
+        "victorian",
+        "maxi",
+        "gothic",
+        "women"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "mauve_bow_pleated_aline_dress",
+      "title": "Mauve Bow Pleated A-Line Dress",
+      "image_path": "backend/data/preloaded_images/mauve_bow_pleated_aline_dress.jpeg",
+      "fabric_weight": "light-medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "fitted",
+      "pattern": "ribbed",
+      "hem_length": "midi",
+      "sleeve_length": "full",
+      "season_tags": [
+        "Spring",
+        "Summer",
+        "Autumn"
+      ],
+      "dominant_color": "Mauve",
+      "color_hex": "#9E6B7A",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "mauve",
+        "bow",
+        "pleated",
+        "a-line",
+        "midi",
+        "women",
+        "western",
+        "SHEIN"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "brown_cape_sleeve_maxi_gown",
+      "title": "Brown Cape Sleeve Maxi Gown",
+      "image_path": "backend/data/preloaded_images/brown_cape_sleeve_maxi_gown.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "straight",
+      "fit": "fitted",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "sleeve_length": "cape",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Brown",
+      "color_hex": "#5C3A1E",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "gown",
+        "brown",
+        "cape sleeve",
+        "maxi",
+        "elegant",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "black_belted_balloon_sleeve_maxi_dress",
+      "title": "Black Belted Balloon Sleeve Maxi Dress",
+      "image_path": "backend/data/preloaded_images/black_belted_balloon_sleeve_maxi_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Western",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Black",
+      "color_hex": "#1A1A1A",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "black",
+        "belted",
+        "balloon sleeve",
+        "maxi",
+        "women",
+        "western"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "teal_victorian_renaissance_maxi_dress",
+      "title": "Teal Victorian Renaissance Maxi Dress",
+      "image_path": "backend/data/preloaded_images/teal_victorian_renaissance_maxi_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Victorian",
+      "silhouette": "a-line",
+      "fit": "fitted",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Teal",
+      "color_hex": "#1A6B6B",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "teal",
+        "victorian",
+        "renaissance",
+        "maxi",
+        "costume",
+        "women",
+        "Nuoqi"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "purple_renaissance_cowl_neck_maxi_dress",
+      "title": "Purple Renaissance Cowl Neck Maxi Dress",
+      "image_path": "backend/data/preloaded_images/purple_renaissance_cowl_neck_maxi_dress.jpeg",
+      "fabric_weight": "light",
+      "category": "dress",
+      "tradition": "Medieval European",
+      "silhouette": "a-line",
+      "fit": "regular",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Purple",
+      "color_hex": "#5A1A8B",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "purple",
+        "renaissance",
+        "cowl neck",
+        "maxi",
+        "medieval",
+        "costume",
+        "women",
+        "Scarlet Darkness"
+      ],
+      "target_gender": "female"
+    },
+    {
+      "id": "dark_green_victorian_button_front_dress",
+      "title": "Dark Green Victorian Button Front Dress",
+      "image_path": "backend/data/preloaded_images/dark_green_victorian_button_front_dress.jpeg",
+      "fabric_weight": "medium",
+      "category": "dress",
+      "tradition": "Victorian",
+      "silhouette": "a-line",
+      "fit": "fitted",
+      "pattern": "solid",
+      "hem_length": "maxi",
+      "sleeve_length": "full",
+      "season_tags": [
+        "All Season"
+      ],
+      "dominant_color": "Dark Green",
+      "color_hex": "#1A4A2E",
+      "occasion_tags": [
+        "Formal"
+      ],
+      "search_tags": [
+        "dress",
+        "dark green",
+        "victorian",
+        "button front",
+        "maxi",
+        "gothic",
+        "renaissance",
+        "women",
+        "Belle Poque"
+      ],
+      "target_gender": "female"
+    }
+  ]
+}

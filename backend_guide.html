@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorkable AI - Backend Documentation (4 Parts)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; color: #333; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; color: white; padding: 40px 20px; margin-bottom: 30px; }
+        .header h1 { font-size: 3rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .header p { font-size: 1.2rem; opacity: 0.9; }
+        .part-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; flex-wrap: wrap; }
+        .part-tab { padding: 15px 30px; background: white; border: none; border-radius: 10px; cursor: pointer; font-size: 1.1rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .part-tab:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+        .part-tab.active { background: #ff6b6b; color: white; }
+        .part-content { display: none; animation: fadeIn 0.5s ease; }
+        .part-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .file-card { background: white; border-radius: 15px; margin-bottom: 25px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .file-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .file-title { font-size: 1.4rem; font-weight: 600; }
+        .file-path { font-size: 0.9rem; opacity: 0.8; font-family: 'Courier New', monospace; }
+        .toggle-icon { font-size: 1.5rem; transition: transform 0.3s ease; }
+        .file-card.expanded .toggle-icon { transform: rotate(180deg); }
+        .file-content { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
+        .file-card.expanded .file-content { max-height: 50000px; }
+        .purpose-box { background: #f8f9fa; border-left: 4px solid #667eea; padding: 15px 20px; margin: 20px; border-radius: 0 8px 8px 0; }
+        .purpose-box h4 { color: #667eea; margin-bottom: 8px; }
+        .code-section { background: #1e1e1e; color: #d4d4d4; overflow-x: auto; }
+        .code-line { display: flex; font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.6; }
+        .line-number { background: #2d2d2d; color: #858585; padding: 2px 15px; min-width: 60px; text-align: right; user-select: none; border-right: 1px solid #3d3d3d; }
+        .line-content { padding: 2px 15px; flex: 1; white-space: pre; }
+        .explanation { background: #e3f2fd; border-left: 3px solid #2196f3; padding: 10px 15px; margin: 5px 20px 15px 20px; border-radius: 0 8px 8px 0; font-size: 0.95rem; color: #1565c0; }
+        .keyword { color: #569cd6; } .string { color: #ce9178; } .comment { color: #6a9955; } .function { color: #dcdcaa; } .class-name { color: #4ec9b0; } .number { color: #b5cea8; }
+        .section-title { background: #ff6b6b; color: white; padding: 10px 20px; font-weight: 600; margin: 0; }
+        .key-concepts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px; }
+        .concept-card { background: #f8f9fa; border-radius: 10px; padding: 20px; border-left: 4px solid #667eea; }
+        .concept-card h4 { color: #667eea; margin-bottom: 10px; }
+        .search-box { position: sticky; top: 20px; background: white; padding: 15px 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); z-index: 100; }
+        .search-box input { width: 100%; padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; }
+        .search-box input:focus { outline: none; border-color: #667eea; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Adorkable AI Backend</h1>
+            <p>Complete Line-by-Line Documentation - 4 Parts: Engine | ML | Router | Data</p>
+        </div>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search code, functions, explanations...">
+        </div>
+        
+        <div class="part-tabs">
+            <button class="part-tab active" onclick="showPart(1)">Part 1: Engine</button>
+            <button class="part-tab" onclick="showPart(2)">Part 2: ML</button>
+            <button class="part-tab" onclick="showPart(3)">Part 3: Router</button>
+            <button class="part-tab" onclick="showPart(4)">Part 4: Data</button>
+        </div>
+
+        <!-- PART 1: ENGINE (Scoring & Constraints) -->
+        <div id="part1" class="part-content active">
+            <div class="key-concepts">
+                <div class="concept-card"><h4>Outfit Scoring</h4><p>105-point system: Color Harmony (30), Skin Flattery (20), Body Shape (20), Weather (20), Occasion (10), Trending (5).</p></div>
+                <div class="concept-card"><h4>Color Theory</h4><p>HSL color wheel: Complementary (180°), Analogous (±30°), Monochromatic (same hue). Calculates harmony scores.</p></div>
+                <div class="concept-card"><h4>Constraints</h4><p>Outfit rules: top+bottom OR dress (not both), outerwear when cold, formal occasion requirements.</p></div>
+            </div>
+
+            <div class="file-card expanded">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">outfit_scorer.py - Master Scoring Engine</div><div class="file-path">backend/engine/outfit_scorer.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>Core intelligence scoring outfits on 6 factors. Max score: 105 points.</p></div>
+                    
+                    <div class="section-title">Master Scoring Function</div>
+                    <div class="explanation"><strong>Lines 410-534:</strong> score_outfit() calculates comprehensive outfit scores using weighted components.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">410</span><span class="line-content"><span class="keyword">def</span> <span class="function">score_outfit</span>(garments, user_profile, weather, occasion, style_pref):</span></div>
+                        <div class="code-line"><span class="line-number">438</span><span class="line-content">    weights = SCORING_WEIGHTS  <span class="comment"># Load 105-point weight distribution</span></span></div>
+                        <div class="code-line"><span class="line-number">441</span><span class="line-content">    color_score, _ = score_color_harmony(garments)</span></div>
+                        <div class="code-line"><span class="line-number">442</span><span class="line-content">    color_weighted = color_score * weights[<span class="string">"color_harmony"</span>]  <span class="comment"># 30% weight</span></span></div>
+                        <div class="code-line"><span class="line-number">446</span><span class="line-content">    skin_score, _ = score_skin_tone_flattery(garments, profile.skin_tone, ...)</span></div>
+                        <div class="code-line"><span class="line-number">498</span><span class="line-content">    <span class="keyword">if</span> is_trending: final_score += weights[<span class="string">"trending_bonus"</span>]  <span class="comment"># +5 bonus</span></span></div>
+                        <div class="code-line"><span class="line-number">503</span><span class="line-content">    final_score = <span class="class-name">max</span>(<span class="number">0</span>, <span class="class-name">min</span>(<span class="number">105</span>, final_score))</span></div>
+                    </div>
+
+                    <div class="section-title">Trend Detection</div>
+                    <div class="explanation"><strong>Lines 63-118:</strong> check_trending() compares outfit against seasonal trends from trends_2026.json.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">63</span><span class="line-content"><span class="keyword">def</span> <span class="function">check_trending</span>(outfit_colors, outfit_style, categories):</span></div>
+                        <div class="code-line"><span class="line-number">79</span><span class="line-content">    season = get_current_season()  <span class="comment"># spring, summer, fall, winter</span></span></div>
+                        <div class="code-line"><span class="line-number">80</span><span class="line-content">    trends = load_trends(season)  <span class="comment"># Load from JSON file</span></span></div>
+                        <div class="code-line"><span class="line-number">94</span><span class="line-content">        <span class="keyword">if</span> color.lower() <span class="keyword">in</span> trend_color:  <span class="comment"># Check color match</span></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">color_theory.py - Color Theory Engine</div><div class="file-path">backend/engine/color_theory.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>HSL color wheel mathematics for harmony calculations and skin tone flattery.</p></div>
+                    
+                    <div class="section-title">Color Harmony Rules</div>
+                    <div class="explanation"><strong>Lines 106-214:</strong> Calculate color relationships: Complementary (180°), Analogous (±30°), Monochromatic.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">106</span><span class="line-content"><span class="keyword">def</span> <span class="function">get_complementary_colors</span>(hex_str):</span></div>
+                        <div class="code-line"><span class="line-number">118</span><span class="line-content">    comp_h = (h + <span class="number">180</span>) % <span class="number">360</span>  <span class="comment"># 180 degrees opposite</span></span></div>
+                        <div class="code-line"><span class="line-number">131</span><span class="line-content"><span class="keyword">def</span> <span class="function">get_analogous_colors</span>(hex_str):</span></div>
+                        <div class="code-line"><span class="line-number">143</span><span class="line-content">    <span class="keyword">return</span> [hsl_to_hex((h - <span class="number">30</span>) % <span class="number">360</span>, s, l),  <span class="comment"># -30°</span></span></div>
+                        <div class="code-line"><span class="line-number">144</span><span class="line-content">            hsl_to_hex((h + <span class="number">30</span>) % <span class="number">360</span>, s, l)]  <span class="comment"># +30°</span></span></div>
+                    </div>
+
+                    <div class="section-title">Harmony Scoring</div>
+                    <div class="explanation"><strong>Lines 319-378:</strong> Returns scores: 1.0 complementary, 0.85 analogous, 0.75 monochromatic, 0.90 neutral.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">319</span><span class="line-content"><span class="keyword">def</span> <span class="function">color_harmony_score</span>(color1_hex, color2_hex):</span></div>
+                        <div class="code-line"><span class="line-number">354</span><span class="line-content">    <span class="keyword">if</span> is_complementary(c1, c2): <span class="keyword">return</span> <span class="number">1.0</span></span></div>
+                        <div class="code-line"><span class="line-number">358</span><span class="line-content">    <span class="keyword">if</span> is_analogous(c1, c2): <span class="keyword">return</span> <span class="number">0.85</span></span></div>
+                        <div class="code-line"><span class="line-number">349</span><span class="line-content">    <span class="keyword">if</span> is_neutral_1 <span class="keyword">or</span> is_neutral_2: <span class="keyword">return</span> <span class="number">0.90</span></span></div>
+                    </div>
+
+                    <div class="section-title">Skin Tone Flattery</div>
+                    <div class="explanation"><strong>Lines 381-437:</strong> Checks if color flatters user's skin tone using palette JSON data.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">381</span><span class="line-content"><span class="keyword">def</span> <span class="function">is_flattering_for_skin</span>(color_name, skin_tone, undertone):</span></div>
+                        <div class="code-line"><span class="line-number">409</span><span class="line-content">    key = <span class="string">f"</span>{skin_tone}<span class="string">_</span>{undertone}<span class="string">"</span>  <span class="comment"># e.g., "Medium_Warm"</span></span></div>
+                        <div class="code-line"><span class="line-number">417</span><span class="line-content">    <span class="keyword">if</span> color_lower <span class="keyword">in</span> best_colors: <span class="keyword">return</span> <span class="number">1.0</span></span></div>
+                        <div class="code-line"><span class="line-number">420</span><span class="line-content">    <span class="keyword">if</span> color_lower <span class="keyword">in</span> avoid_colors: <span class="keyword">return</span> <span class="number">0.0</span></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">outfit_constraints.py - Outfit Rules</div><div class="file-path">backend/engine/outfit_constraints.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>Validates outfit structure: top+bottom XOR dress, weather layering, formal requirements.</p></div>
+                    
+                    <div class="section-title">Validation Rules</div>
+                    <div class="explanation"><strong>Lines 69-114:</strong> Three rule functions ensure valid outfit combinations.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">69</span><span class="line-content"><span class="keyword">def</span> <span class="function">outfit_has_complete_separates_or_dress</span>(scored):</span></div>
+                        <div class="code-line"><span class="line-number">74</span><span class="line-content">    <span class="keyword">if</span> dress:  <span class="comment"># If dress present, no top/bottom allowed</span></span></div>
+                        <div class="code-line"><span class="line-number">75</span><span class="line-content">        <span class="keyword">if</span> top <span class="keyword">is not None</span> <span class="keyword">or</span> bottom <span class="keyword">is not None</span>: <span class="keyword">return</span> <span class="keyword">False</span></span></div>
+                        <div class="code-line"><span class="line-number">78</span><span class="line-content">    <span class="keyword">return</span> top <span class="keyword">is not None</span> <span class="keyword">and</span> bottom <span class="keyword">is not None</span>  <span class="comment"># Must have both</span></span></div>
+                        <div class="code-line"><span class="line-number">81</span><span class="line-content"><span class="keyword">def</span> <span class="function">outfit_passes_weather_outerwear_rule</span>(scored, weather, outerwear_available):</span></div>
+                        <div class="code-line"><span class="line-number">94</span><span class="line-content"><span class="keyword">def</span> <span class="function">outfit_passes_formal_rule</span>(scored, occasion, dress_available):</span></div>
+                    </div>
+
+                    <div class="section-title">Candidate Generation</div>
+                    <div class="explanation"><strong>Lines 137-213:</strong> Generates all valid outfit combinations from wardrobe items.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">137</span><span class="line-content"><span class="keyword">def</span> <span class="function">generate_wardrobe_outfit_candidates</span>(wardrobe, profile, weather, occasion):</span></div>
+                        <div class="code-line"><span class="line-number">173</span><span class="line-content">    <span class="keyword">for</span> top <span class="keyword">in</span> tops:  <span class="comment"># Iterate all tops</span></span></div>
+                        <div class="code-line"><span class="line-number">174</span><span class="line-content">        <span class="keyword">for</span> bottom <span class="keyword">in</span> bottoms:  <span class="comment"># Pair with each bottom</span></span></div>
+                        <div class="code-line"><span class="line-number">180</span><span class="line-content">            <span class="keyword">if</span> need_outerwear <span class="keyword">and</span> outerwear_avail:  <span class="comment"># Cold weather</span></span></div>
+                        <div class="code-line"><span class="line-number">205</span><span class="line-content">    <span class="keyword">return</span> filter_scored_outfits(candidates, weather, occasion, ...)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PART 2: ML (Machine Learning) -->
+        <div id="part2" class="part-content">
+            <div class="key-concepts">
+                <div class="concept-card"><h4>TensorFlow Classifier</h4><p>EfficientNetB0 with dual outputs (category + style). Transfer learning from ImageNet weights.</p></div>
+                <div class="concept-card"><h4>MediaPipe Face</h4><p>BlazeFace detects faces, extracts cheek RGB for 6 skin tone classifications + undertone.</p></div>
+                <div class="concept-card"><h4>MediaPipe Pose</h4><p>33 landmarks detect shoulders/hips. Calculates ratios for 6 body shape classifications.</p></div>
+                <div class="concept-card"><h4>K-Means Colors</h4><p>Clusters image pixels to find dominant colors. Maps hex to fashion color names.</p></div>
+            </div>
+
+            <div class="file-card expanded">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">classifier.py - Clothing Classifier</div><div class="file-path">backend/ml/classifier.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>EfficientNetB0-based deep learning model for clothing classification into 8 categories and 5 styles.</p></div>
+                    
+                    <div class="section-title">Model Architecture</div>
+                    <div class="explanation"><strong>Lines 32-110:</strong> Multi-output model with frozen EfficientNetB0 base and two Dense heads.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">54</span><span class="line-content">    base_model = EfficientNetB0(</span></div>
+                        <div class="code-line"><span class="line-number">55</span><span class="line-content">        weights=<span class="string">'imagenet'</span>,  <span class="comment"># Pre-trained on ImageNet</span></span></div>
+                        <div class="code-line"><span class="line-number">56</span><span class="line-content">        include_top=<span class="keyword">False</span>,  <span class="comment"># Remove classification head</span></span></div>
+                        <div class="code-line"><span class="line-number">57</span><span class="line-content">        input_shape=(*IMAGE_SIZE, <span class="number">3</span>)  <span class="comment"># 224x224x3 RGB</span></span></div>
+                        <div class="code-line"><span class="line-number">62</span><span class="line-content">    base_model.trainable = <span class="keyword">False</span>  <span class="comment"># Freeze base layers</span></span></div>
+                        <div class="code-line"><span class="line-number">78</span><span class="line-content">    category_output = Dense(<span class="number">8</span>, activation=<span class="string">'softmax'</span>, name=<span class="string">'category'</span>)(x)</span></div>
+                        <div class="code-line"><span class="line-number">84</span><span class="line-content">    style_output = Dense(<span class="number">5</span>, activation=<span class="string">'softmax'</span>, name=<span class="string">'style'</span>)(x)</span></div>
+                    </div>
+
+                    <div class="section-title">Classification Function</div>
+                    <div class="explanation"><strong>Lines 169-217:</strong> classify_garment() preprocesses image, runs prediction, returns category/style with confidence.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">169</span><span class="line-content"><span class="keyword">def</span> <span class="function">classify_garment</span>(image_path):</span></div>
+                        <div class="code-line"><span class="line-number">187</span><span class="line-content">    model = get_model()  <span class="comment"># Load or return cached model</span></span></div>
+                        <div class="code-line"><span class="line-number">190</span><span class="line-content">    <span class="keyword">if</span> model <span class="keyword">is None</span>: <span class="keyword">return</span> mock_classify(image_path)  <span class="comment"># Fallback</span></span></div>
+                        <div class="code-line"><span class="line-number">194</span><span class="line-content">    img_array = load_and_preprocess(image_path, target_size=(<span class="number">224</span>, <span class="number">224</span>))</span></div>
+                        <div class="code-line"><span class="line-number">195</span><span class="line-content">    img_batch = np.expand_dims(img_array, axis=<span class="number">0</span>)  <span class="comment"># Add batch dimension</span></span></div>
+                        <div class="code-line"><span class="line-number">198</span><span class="line-content">    predictions = model.predict(img_batch, verbose=<span class="number">0</span>)  <span class="comment"># Inference</span></span></div>
+                        <div class="code-line"><span class="line-number">202</span><span class="line-content">    category_idx = np.argmax(category_probs)  <span class="comment"># Get highest probability</span></span></div>
+                    </div>
+
+                    <div class="section-title">Mock Classification (Fallback)</div>
+                    <div class="explanation"><strong>Lines 267-380:</strong> Rule-based fallback when no ML model exists. Uses image features and filename keywords.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">267</span><span class="line-content"><span class="keyword">def</span> <span class="function">mock_classify</span>(image_path):</span></div>
+                        <div class="code-line"><span class="line-number">282</span><span class="line-content">    features = _analyze_image_features(image_path)  <span class="comment"># aspect, brightness, edges</span></span></div>
+                        <div class="code-line"><span class="line-number">312</span><span class="line-content">    <span class="keyword">if</span> aspect < <span class="number">0.7</span>:  <span class="comment"># Tall/slim = shoes or pants</span></span></div>
+                        <div class="code-line"><span class="line-number">313</span><span class="line-content">        <span class="keyword">if</span> edge_density > <span class="number">0.06</span>: category = <span class="string">"shoes"</span></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">skin_tone.py - Skin Tone Analysis</div><div class="file-path">backend/ml/skin_tone.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>MediaPipe BlazeFace detects faces, extracts cheek RGB, classifies 6 skin tones + 3 undertones.</p></div>
+                    
+                    <div class="section-title">MediaPipe Initialization</div>
+                    <div class="explanation"><strong>Lines 21-53:</strong> Downloads and initializes MediaPipe FaceDetector with TFLite model.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">28</span><span class="line-content">    model_path = os.path.join(os.path.dirname(__file__), <span class="string">"models"</span>, <span class="string">"blaze_face.tflite"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">34</span><span class="line-content">        url = <span class="string">"https://storage.googleapis.com/mediapipe-models/face_detector/..."</span></span></div>
+                        <div class="code-line"><span class="line-number">45</span><span class="line-content">    FACE_DETECTOR = FaceDetector.create_from_options(options)</span></div>
+                    </div>
+
+                    <div class="section-title">Skin Tone Classification</div>
+                    <div class="explanation"><strong>Lines 102-144:</strong> classify_skin_tone_from_rgb() uses luminance thresholds for 6 skin tone categories.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">102</span><span class="line-content"><span class="keyword">def</span> <span class="function">classify_skin_tone_from_rgb</span>(r, g, b):</span></div>
+                        <div class="code-line"><span class="line-number">124</span><span class="line-content">    luminance = <span class="number">0.2126</span> * r + <span class="number">0.7152</span> * g + <span class="number">0.0722</span> * b  <span class="comment"># Perceived luminance</span></span></div>
+                        <div class="code-line"><span class="line-number">133</span><span class="line-content">    <span class="keyword">if</span> luminance > <span class="number">175</span>: <span class="keyword">return</span> <span class="string">"Very Fair"</span>, <span class="number">0.92</span></span></div>
+                        <div class="code-line"><span class="line-number">136</span><span class="line-content">    <span class="keyword">elif</span> luminance > <span class="number">155</span>: <span class="keyword">return</span> <span class="string">"Fair"</span>, <span class="number">0.88</span></span></div>
+                    </div>
+
+                    <div class="section-title">Undertone Classification</div>
+                    <div class="explanation"><strong>Lines 147-199:</strong> classify_undertone_from_rgb() uses hue analysis to determine Warm/Cool/Neutral.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">147</span><span class="line-content"><span class="keyword">def</span> <span class="function">classify_undertone_from_rgb</span>(r, g, b):</span></div>
+                        <div class="code-line"><span class="line-number">165</span><span class="line-content">    warm_score = <span class="number">0</span>; cool_score = <span class="number">0</span>  <span class="comment"># Scoring system</span></span></div>
+                        <div class="code-line"><span class="line-number">177</span><span class="line-content">    <span class="keyword">if</span> <span class="number">0</span> <= h <= <span class="number">60</span> <span class="keyword">or</span> <span class="number">330</span> <= h: warm_score += <span class="number">2</span>  <span class="comment"># Red-orange-yellow</span></span></div>
+                        <div class="code-line"><span class="line-number">181</span><span class="line-content">    <span class="keyword">if</span> <span class="number">90</span> <= h <= <span class="number">270</span>: cool_score += <span class="number">2</span>  <span class="comment"># Green-blue-purple</span></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">body_shape.py - Body Shape Analysis</div><div class="file-path">backend/ml/body_shape.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>MediaPipe Pose detects 33 landmarks, calculates shoulder/hip ratios, classifies 6 body shapes.</p></div>
+                    
+                    <div class="section-title">Landmark Indices</div>
+                    <div class="explanation"><strong>Lines 55-66:</strong> MediaPipe Pose uses standardized 33 landmark indices.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">56</span><span class="line-content">LEFT_SHOULDER = <span class="number">11</span>; RIGHT_SHOULDER = <span class="number">12</span></span></div>
+                        <div class="code-line"><span class="line-number">58</span><span class="line-content">LEFT_HIP = <span class="number">23</span>; RIGHT_HIP = <span class="number">24</span></span></div>
+                        <div class="code-line"><span class="line-number">62</span><span class="line-content">NOSE = <span class="number">0</span>  <span class="comment"># For height reference</span></span></div>
+                    </div>
+
+                    <div class="section-title">Body Shape Classification</div>
+                    <div class="explanation"><strong>Lines 200-261:</strong> Uses shoulder-to-hip ratio with calibrated thresholds for 6 shapes.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">200</span><span class="line-content"><span class="keyword">def</span> <span class="function">classify_body_shape</span>(shoulder_width, hip_width, waist_width, torso_height):</span></div>
+                        <div class="code-line"><span class="line-number">216</span><span class="line-content">    eff_shoulder = shoulder_width * <span class="number">0.93</span>  <span class="comment"># 2D photo calibration</span></span></div>
+                        <div class="code-line"><span class="line-number">217</span><span class="line-content">    ratio = eff_shoulder / hip_width  <span class="comment"># Key metric</span></span></div>
+                        <div class="code-line"><span class="line-number">243</span><span class="line-content">    <span class="keyword">if</span> ratio >= <span class="number">1.22</span>: <span class="keyword">return</span> <span class="string">"Inverted Triangle"</span>, confidence  <span class="comment"># Wide shoulders</span></span></div>
+                        <div class="code-line"><span class="line-number">249</span><span class="line-content">    <span class="keyword">elif</span> ratio <= <span class="number">0.85</span>: <span class="keyword">return</span> <span class="string">"Pear"</span>, confidence  <span class="comment"># Narrow shoulders</span></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">color_extractor.py - Color Extraction</div><div class="file-path">backend/ml/color_extractor.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>K-Means clustering finds dominant colors. Filters shadows/highlights. Maps hex to color names.</p></div>
+                    
+                    <div class="section-title">Dominant Color Extraction</div>
+                    <div class="explanation"><strong>Lines 205-278:</strong> extract_dominant_color() resizes, filters by brightness, applies K-Means clustering.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">205</span><span class="line-content"><span class="keyword">def</span> <span class="function">extract_dominant_color</span>(image_path, n_clusters=<span class="number">5</span>):</span></div>
+                        <div class="code-line"><span class="line-number">239</span><span class="line-content">    img = cv2.resize(img, (new_w, new_h), interpolation=cv2.INTER_AREA)</span></div>
+                        <div class="code-line"><span class="line-number">252</span><span class="line-content">    mask = (brightness > <span class="number">30</span>) & (brightness < <span class="number">240</span>)  <span class="comment"># Filter shadows/highlights</span></span></div>
+                        <div class="code-line"><span class="line-number">260</span><span class="line-content">    kmeans = KMeans(n_clusters=<span class="number">5</span>, random_state=<span class="number">42</span>, n_init=<span class="number">10</span>)</span></div>
+                        <div class="code-line"><span class="line-number">266</span><span class="line-content">    dominant_cluster_idx = np.argmax(counts)  <span class="comment"># Largest cluster</span></span></div>
+                    </div>
+
+                    <div class="section-title">Color Name Resolution</div>
+                    <div class="explanation"><strong>Lines 149-179:</strong> hex_to_color_name() finds closest fashion color by RGB distance.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">149</span><span class="line-content"><span class="keyword">def</span> <span class="function">hex_to_color_name</span>(hex_str):</span></div>
+                        <div class="code-line"><span class="line-number">162</span><span class="line-content">    target_rgb = hex_to_rgb(hex_str)</span></div>
+                        <div class="code-line"><span class="line-number">171</span><span class="line-content">    distance = color_distance_rgb(target_rgb, color_rgb)  <span class="comment"># Euclidean</span></span></div>
+                        <div class="code-line"><span class="line-number">173</span><span class="line-content">    <span class="keyword">if</span> distance < min_distance:  <span class="comment"># Find nearest</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PART 3: ROUTER (API Layer) -->
+        <div id="part3" class="part-content">
+            <div class="key-concepts">
+                <div class="concept-card"><h4>FastAPI Routers</h4><p>Modular API endpoints: wardrobe, profile, recommendations. Each router handles specific domain logic.</p></div>
+                <div class="concept-card"><h4>Dependency Injection</h4><p>FastAPI's Depends() provides db sessions, current user authentication across all endpoints.</p></div>
+            </div>
+
+            <div class="file-card expanded">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">main.py - Application Entry Point</div><div class="file-path">backend/main.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>FastAPI app initialization, CORS, static files, router mounting, lifespan management.</p></div>
+                    
+                    <div class="section-title">Imports & Lifespan</div>
+                    <div class="explanation"><strong>Lines 7-47:</strong> Core imports and asynccontextmanager for startup/shutdown.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">7</span><span class="line-content"><span class="keyword">import</span> os</span></div>
+                        <div class="code-line"><span class="line-number">8</span><span class="line-content"><span class="keyword">import</span> logging</span></div>
+                        <div class="code-line"><span class="line-number">9</span><span class="line-content"><span class="keyword">from</span> contextlib <span class="keyword">import</span> asynccontextmanager</span></div>
+                        <div class="code-line"><span class="line-number">11</span><span class="line-content"><span class="keyword">from</span> fastapi <span class="keyword">import</span> FastAPI</span></div>
+                        <div class="code-line"><span class="line-number">12</span><span class="line-content"><span class="keyword">from</span> fastapi.middleware.cors <span class="keyword">import</span> CORSMiddleware</span></div>
+                        <div class="code-line"><span class="line-number">25</span><span class="line-content"><span class="keyword">from</span> backend.auth <span class="keyword">import</span> auth_router  <span class="comment"># Auth endpoints</span></span></div>
+                        <div class="code-line"><span class="line-number">26</span><span class="line-content"><span class="keyword">from</span> backend.routers <span class="keyword">import</span> wardrobe, profile, recommendations, planner, combo, analytics</span></div>
+                    </div>
+
+                    <div class="section-title">Lifespan Manager</div>
+                    <div class="explanation"><strong>Lines 44-73:</strong> Handles startup (create tables, check directories) and shutdown.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">44</span><span class="line-content">@asynccontextmanager</span></div>
+                        <div class="code-line"><span class="line-number">45</span><span class="line-content"><span class="keyword">async def</span> <span class="function">lifespan</span>(app: FastAPI):</span></div>
+                        <div class="code-line"><span class="line-number">60</span><span class="line-content">    <span class="keyword">await</span> create_all_tables()  <span class="comment"># SQLAlchemy create tables</span></span></div>
+                        <div class="code-line"><span class="line-number">64</span><span class="line-content">    os.makedirs(UPLOAD_DIR, exist_ok=<span class="keyword">True</span>)  <span class="comment"># Ensure uploads dir</span></span></div>
+                        <div class="code-line"><span class="line-number">69</span><span class="line-content">    <span class="keyword">yield</span>  <span class="comment"># App runs here</span></span></div>
+                    </div>
+
+                    <div class="section-title">App Creation & CORS</div>
+                    <div class="explanation"><strong>Lines 79-105:</strong> Create FastAPI instance, add CORS middleware for frontend communication.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">79</span><span class="line-content">app = FastAPI(title=<span class="string">"Adorkable AI"</span>, version=<span class="string">"1.0.0"</span>, lifespan=lifespan)</span></div>
+                        <div class="code-line"><span class="line-number">99</span><span class="line-content">app.add_middleware(CORSMiddleware, allow_origins=allow_origins, allow_methods=[<span class="string">"*"</span>])</span></div>
+                    </div>
+
+                    <div class="section-title">Router Mounting</div>
+                    <div class="explanation"><strong>Lines 112-142:</strong> Mount static files and all API routers with /api/v1 prefix.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">117</span><span class="line-content">app.mount(<span class="string">"/uploads"</span>, StaticFiles(directory=UPLOAD_DIR), name=<span class="string">"uploads"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">124</span><span class="line-content">app.include_router(auth_router, prefix=<span class="string">"/api/v1"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">127</span><span class="line-content">app.include_router(wardrobe.router, prefix=<span class="string">"/api/v1"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">130</span><span class="line-content">app.include_router(profile.router, prefix=<span class="string">"/api/v1"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">133</span><span class="line-content">app.include_router(recommendations.router, prefix=<span class="string">"/api/v1"</span>)</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">wardrobe.py - Wardrobe Router</div><div class="file-path">backend/routers/wardrobe.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>Garment upload with AI analysis, starter catalog import, wardrobe statistics.</p></div>
+                    
+                    <div class="section-title">Garment Upload</div>
+                    <div class="explanation"><strong>Lines 361-448:</strong> upload_garment receives image, runs AI classification and color extraction.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">361</span><span class="line-content">@router.post(<span class="string">"/upload"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">363</span><span class="line-content">    file: UploadFile = File(...),  <span class="comment"># Receive image</span></span></div>
+                        <div class="code-line"><span class="line-number">370</span><span class="line-content">    current_user: User = Depends(get_current_user)  <span class="comment"># Auth check</span></span></div>
+                        <div class="code-line"><span class="line-number">400</span><span class="line-content">        detected_hex, detected_color = extract_dominant_color(image_path)  <span class="comment"># AI color</span></span></div>
+                        <div class="code-line"><span class="line-number">411</span><span class="line-content">        classification = classify_garment(image_path)  <span class="comment"># AI category/style</span></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">profile.py - Profile Router</div><div class="file-path">backend/routers/profile.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>Skin tone and body shape analysis via selfie and full-body photo uploads.</p></div>
+                    
+                    <div class="section-title">Selfie Upload</div>
+                    <div class="explanation"><strong>Lines 124-173:</strong> upload_selfie saves image, calls analyze_skin_tone(), stores results.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">124</span><span class="line-content">@router.post(<span class="string">"/selfie"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">148</span><span class="line-content">    analysis = analyze_skin_tone(image_path)  <span class="comment"># MediaPipe + RGB analysis</span></span></div>
+                        <div class="code-line"><span class="line-number">159</span><span class="line-content">        profile.skin_tone = analysis.get(<span class="string">"skin_tone"</span>)</span></div>
+                    </div>
+
+                    <div class="section-title">Body Photo Upload</div>
+                    <div class="explanation"><strong>Lines 175-221:</strong> upload_body_photo analyzes body shape using MediaPipe Pose.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">199</span><span class="line-content">    analysis = analyze_body_shape(image_path)  <span class="comment"># 33 landmarks</span></span></div>
+                        <div class="code-line"><span class="line-number">211</span><span class="line-content">        profile.body_shape = analysis.get(<span class="string">"body_shape"</span>)</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">recommendations.py - Recommendations Router</div><div class="file-path">backend/routers/recommendations.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>Daily outfit recommendations combining wardrobe, profile, weather, and scoring engine.</p></div>
+                    
+                    <div class="section-title">Daily Recommendation</div>
+                    <div class="explanation"><strong>Lines 136-237:</strong> Orchestrates outfit generation: wardrobe + weather + scoring.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">136</span><span class="line-content">@router.post(<span class="string">"/daily"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">152</span><span class="line-content">    profile = <span class="keyword">await</span> get_user_profile(db, current_user.id)</span></div>
+                        <div class="code-line"><span class="line-number">155</span><span class="line-content">    wardrobe = <span class="keyword">await</span> get_combined_wardrobe_with_starter(db, current_user, min_items=<span class="number">3</span>)</span></div>
+                        <div class="code-line"><span class="line-number">168</span><span class="line-content">        weather = <span class="keyword">await</span> run_in_threadpool(get_current_weather, current_user.city)</span></div>
+                        <div class="code-line"><span class="line-number">175</span><span class="line-content">    candidates = generate_wardrobe_outfit_candidates(wardrobe, profile, weather, ...)</span></div>
+                        <div class="code-line"><span class="line-number">194</span><span class="line-content">        selected = weighted_random_select(ranked)  <span class="comment"># Stochastic selection</span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PART 4: DATA (Database & Config) -->
+        <div id="part4" class="part-content">
+            <div class="key-concepts">
+                <div class="concept-card"><h4>SQLAlchemy 2.0 Async</h4><p>Modern async ORM with aiosqlite. Uses Mapped[] syntax for type hints.</p></div>
+                <div class="concept-card"><h4>JWT Authentication</h4><p>bcrypt password hashing, HS256 JWT tokens with 7-day expiration.</p></div>
+                <div class="concept-card"><h4>Environment Config</h4><p>python-dotenv loads .env. Constants for skin tones, body shapes, scoring weights.</p></div>
+            </div>
+
+            <div class="file-card expanded">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">database.py - Database Layer</div><div class="file-path">backend/database.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>SQLAlchemy 2.0 async ORM with User, Profile, Garment, OutfitLog models.</p></div>
+                    
+                    <div class="section-title">Async Engine Setup</div>
+                    <div class="explanation"><strong>Lines 30-47:</strong> Create async engine with aiosqlite, configure session maker.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">30</span><span class="line-content"><span class="keyword">if</span> DATABASE_URL.startswith(<span class="string">"sqlite:///"</span>):</span></div>
+                        <div class="code-line"><span class="line-number">31</span><span class="line-content">    ASYNC_DATABASE_URL = DATABASE_URL.replace(<span class="string">"sqlite:///"</span>, <span class="string">"sqlite+aiosqlite:///"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">36</span><span class="line-content">engine = create_async_engine(ASYNC_DATABASE_URL, echo=<span class="keyword">False</span>, future=<span class="keyword">True</span>)</span></div>
+                        <div class="code-line"><span class="line-number">43</span><span class="line-content">async_session_maker = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=<span class="keyword">False</span>)</span></div>
+                    </div>
+
+                    <div class="section-title">User Model</div>
+                    <div class="explanation"><strong>Lines 63-94:</strong> User table with auth and relationships to Profile and Garments.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">63</span><span class="line-content"><span class="keyword">class</span> <span class="class-name">User</span>(Base):</span></div>
+                        <div class="code-line"><span class="line-number">75</span><span class="line-content">    __tablename__ = <span class="string">"users"</span></span></div>
+                        <div class="code-line"><span class="line-number">77</span><span class="line-content">    id: Mapped[<span class="class-name">int</span>] = mapped_column(Integer, primary_key=<span class="keyword">True</span>, index=<span class="keyword">True</span>)</span></div>
+                        <div class="code-line"><span class="line-number">78</span><span class="line-content">    email: Mapped[<span class="class-name">str</span>] = mapped_column(String(<span class="number">255</span>), unique=<span class="keyword">True</span>, nullable=<span class="keyword">False</span>)</span></div>
+                        <div class="code-line"><span class="line-number">79</span><span class="line-content">    hashed_password: Mapped[<span class="class-name">str</span>] = mapped_column(String(<span class="number">255</span>), nullable=<span class="keyword">False</span>)</span></div>
+                        <div class="code-line"><span class="line-number">88</span><span class="line-content">    wardrobe_items: Mapped[List[<span class="string">"GarmentItem"</span>]] = relationship(<span class="string">"GarmentItem"</span>, cascade=<span class="string">"all, delete-orphan"</span>)</span></div>
+                    </div>
+
+                    <div class="section-title">GarmentItem Model</div>
+                    <div class="explanation"><strong>Lines 137-193:</strong> Stores clothing with AI-extracted features: category, style, color, fabric.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">137</span><span class="line-content"><span class="keyword">class</span> <span class="class-name">GarmentItem</span>(Base):</span></div>
+                        <div class="code-line"><span class="line-number">161</span><span class="line-content">    image_path: Mapped[<span class="class-name">str</span>] = mapped_column(String(<span class="number">500</span>), nullable=<span class="keyword">False</span>)</span></div>
+                        <div class="code-line"><span class="line-number">162</span><span class="line-content">    category: Mapped[<span class="class-name">str</span>] = mapped_column(String(<span class="number">50</span>), nullable=<span class="keyword">False</span>)  <span class="comment"># AI-detected</span></span></div>
+                        <div class="code-line"><span class="line-number">164</span><span class="line-content">    dominant_color: Mapped[<span class="class-name">str</span>] = mapped_column(String(<span class="number">100</span>), nullable=<span class="keyword">False</span>)</span></div>
+                        <div class="code-line"><span class="line-number">165</span><span class="line-content">    color_hex: Mapped[<span class="class-name">str</span>] = mapped_column(String(<span class="number">7</span>), nullable=<span class="keyword">False</span>)  <span class="comment"># #RRGGBB</span></span></div>
+                        <div class="code-line"><span class="line-number">169</span><span class="line-content">    wear_count: Mapped[<span class="class-name">int</span>] = mapped_column(Integer, default=<span class="number">0</span>)</span></div>
+                    </div>
+
+                    <div class="section-title">Session Management</div>
+                    <div class="explanation"><strong>Lines 270-314:</strong> get_db() dependency provides async sessions with auto commit/rollback.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">270</span><span class="line-content"><span class="keyword">async def</span> <span class="function">create_all_tables</span>():</span></div>
+                        <div class="code-line"><span class="line-number">276</span><span class="line-content">    <span class="keyword">async with</span> engine.begin() <span class="keyword">as</span> conn:</span></div>
+                        <div class="code-line"><span class="line-number">277</span><span class="line-content">        <span class="keyword">await</span> conn.run_sync(Base.metadata.create_all)  <span class="comment"># Create all tables</span></span></div>
+                        <div class="code-line"><span class="line-number">294</span><span class="line-content"><span class="keyword">async def</span> <span class="function">get_db</span>():  <span class="comment"># FastAPI dependency</span></span></div>
+                        <div class="code-line"><span class="line-number">306</span><span class="line-content">    <span class="keyword">async with</span> async_session_maker() <span class="keyword">as</span> session:</span></div>
+                        <div class="code-line"><span class="line-number">308</span><span class="line-content">        <span class="keyword">yield</span> session  <span class="comment"># Provide session to endpoint</span></span></div>
+                        <div class="code-line"><span class="line-number">309</span><span class="line-content">        <span class="keyword">await</span> session.commit()  <span class="comment"># Auto-commit on success</span></span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">auth.py - Authentication Module</div><div class="file-path">backend/auth.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>JWT authentication with bcrypt hashing. Register, login, token validation.</p></div>
+                    
+                    <div class="section-title">Password Hashing</div>
+                    <div class="explanation"><strong>Lines 28-55:</strong> bcrypt via passlib for secure password handling.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">28</span><span class="line-content">pwd_context = CryptContext(schemes=[<span class="string">"bcrypt"</span>], deprecated=<span class="string">"auto"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">31</span><span class="line-content"><span class="keyword">def</span> <span class="function">hash_password</span>(plain_password): <span class="keyword">return</span> pwd_context.hash(plain_password)</span></div>
+                        <div class="code-line"><span class="line-number">44</span><span class="line-content"><span class="keyword">def</span> <span class="function">verify_password</span>(plain, hashed): <span class="keyword">return</span> pwd_context.verify(plain, hashed)</span></div>
+                    </div>
+
+                    <div class="section-title">JWT Token Management</div>
+                    <div class="explanation"><strong>Lines 62-106:</strong> HS256 JWT with 7-day expiration. create_access_token(), decode_token().</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">62</span><span class="line-content">security = HTTPBearer()  <span class="comment"># FastAPI token extraction</span></span></div>
+                        <div class="code-line"><span class="line-number">65</span><span class="line-content"><span class="keyword">def</span> <span class="function">create_access_token</span>(data: <span class="class-name">dict</span>):</span></div>
+                        <div class="code-line"><span class="line-number">86</span><span class="line-content">    to_encode.update({<span class="string">"exp"</span>: expire, <span class="string">"iat"</span>: datetime.utcnow(), <span class="string">"type"</span>: <span class="string">"access"</span>})</span></div>
+                        <div class="code-line"><span class="line-number">88</span><span class="line-content">    <span class="keyword">return</span> jwt.encode(to_encode, SECRET_KEY, algorithm=<span class="string">"HS256"</span>)</span></div>
+                    </div>
+
+                    <div class="section-title">Current User Dependency</div>
+                    <div class="explanation"><strong>Lines 109-160:</strong> get_current_user() validates token, fetches user from DB.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">109</span><span class="line-content"><span class="keyword">async def</span> <span class="function">get_current_user</span>(credentials, db):</span></div>
+                        <div class="code-line"><span class="line-number">131</span><span class="line-content">    token = credentials.credentials  <span class="comment"># Extract Bearer token</span></span></div>
+                        <div class="code-line"><span class="line-number">134</span><span class="line-content">    payload = decode_token(token)  <span class="comment"># Validate JWT</span></span></div>
+                        <div class="code-line"><span class="line-number">152</span><span class="line-content">    user = <span class="keyword">await</span> get_user_by_id(db, <span class="class-name">int</span>(user_id))</span></div>
+                    </div>
+
+                    <div class="section-title">Auth Endpoints</div>
+                    <div class="explanation"><strong>Lines 220-319:</strong> /register creates user with hashed password. /login returns JWT.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">220</span><span class="line-content">@auth_router.post(<span class="string">"/register"</span>)  <span class="comment"># status_code=201</span></span></div>
+                        <div class="code-line"><span class="line-number">244</span><span class="line-content">    hashed_pw = hash_password(user_data.password)  <span class="comment"># bcrypt</span></span></div>
+                        <div class="code-line"><span class="line-number">257</span><span class="line-content">    access_token = create_access_token(data={<span class="string">"sub"</span>: new_user.id})  <span class="comment"># JWT</span></span></div>
+                        <div class="code-line"><span class="line-number">266</span><span class="line-content">@auth_router.post(<span class="string">"/login"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">291</span><span class="line-content">    <span class="keyword">if not</span> verify_password(password, user.hashed_password): <span class="keyword">raise</span> HTTPException(<span class="number">401</span>)</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="file-card">
+                <div class="file-header" onclick="toggleCard(this)">
+                    <div><div class="file-title">config.py - Configuration Module</div><div class="file-path">backend/config.py</div></div>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="file-content">
+                    <div class="purpose-box"><h4>Purpose</h4><p>Environment variables, constants, skin tones, body shapes, scoring weights.</p></div>
+                    
+                    <div class="section-title">Environment Loading</div>
+                    <div class="explanation"><strong>Lines 7-13:</strong> Load .env file and set base directory.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">8</span><span class="line-content"><span class="keyword">from</span> dotenv <span class="keyword">import</span> load_dotenv; load_dotenv()</span></div>
+                        <div class="code-line"><span class="line-number">13</span><span class="line-content">BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))</span></div>
+                    </div>
+
+                    <div class="section-title">API Keys & Secrets</div>
+                    <div class="explanation"><strong>Lines 18-24:</strong> Load from environment with fallback defaults.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">18</span><span class="line-content">OPENWEATHER_API_KEY = os.getenv(<span class="string">"OPENWEATHER_API_KEY"</span>, <span class="string">""</span>)</span></div>
+                        <div class="code-line"><span class="line-number">19</span><span class="line-content">SECRET_KEY = os.getenv(<span class="string">"SECRET_KEY"</span>, <span class="string">"adorkable-secret-key-32-chars-long"</span>)</span></div>
+                        <div class="code-line"><span class="line-number">29</span><span class="line-content">DATABASE_URL = os.getenv(<span class="string">"DATABASE_URL"</span>, <span class="string">"sqlite:///./adorkable.db"</span>)</span></div>
+                    </div>
+
+                    <div class="section-title">ML Constants</div>
+                    <div class="explanation"><strong>Lines 42-43:</strong> Image size for EfficientNet, K-Means cluster count.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">42</span><span class="line-content">IMAGE_SIZE = (<span class="number">224</span>, <span class="number">224</span>)  <span class="comment"># EfficientNet input size</span></span></div>
+                        <div class="code-line"><span class="line-number">43</span><span class="line-content">COLOR_EXTRACTION_CLUSTERS = <span class="number">5</span>  <span class="comment"># K-Means clusters</span></span></div>
+                    </div>
+
+                    <div class="section-title">Scoring Weights (105 pts)</div>
+                    <div class="explanation"><strong>Lines 183-190:</strong> Weight distribution for outfit scoring algorithm.</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">183</span><span class="line-content">SCORING_WEIGHTS = {</span></div>
+                        <div class="code-line"><span class="line-number">184</span><span class="line-content">    <span class="string">"color_harmony"</span>: <span class="number">30.0</span>,   <span class="comment"># Colors work together</span></span></div>
+                        <div class="code-line"><span class="line-number">185</span><span class="line-content">    <span class="string">"skin_flattery"</span>: <span class="number">20.0</span>,   <span class="comment"># Flatters skin tone</span></span></div>
+                        <div class="code-line"><span class="line-number">186</span><span class="line-content">    <span class="string">"body_shape"</span>: <span class="number">20.0</span>,    <span class="comment"># Suits body shape</span></span></div>
+                        <div class="code-line"><span class="line-number">187</span><span class="line-content">    <span class="string">"weather"</span>: <span class="number">20.0</span>,       <span class="comment"># Appropriate for weather</span></span></div>
+                        <div class="code-line"><span class="line-number">188</span><span class="line-content">    <span class="string">"occasion"</span>: <span class="number">10.0</span>,      <span class="comment"># Fits occasion</span></span></div>
+                        <div class="code-line"><span class="line-number">189</span><span class="line-content">    <span class="string">"trending_bonus"</span>: <span class="number">5.0</span>  <span class="comment"># Currently trending</span></span></div>
+                        <div class="code-line"><span class="line-number">190</span><span class="line-content">}</span></div>
+                    </div>
+
+                    <div class="section-title">Categories & Shapes</div>
+                    <div class="explanation"><strong>Lines 48-68:</strong> Skin tones (6 types), undertones (3), body shapes (6).</div>
+                    <div class="code-section">
+                        <div class="code-line"><span class="line-number">48</span><span class="line-content">SKIN_TONE_LABELS = [<span class="string">"Very Fair"</span>, <span class="string">"Fair"</span>, <span class="string">"Light Medium"</span>, <span class="string">"Medium"</span>, <span class="string">"Medium Dark"</span>, <span class="string">"Dark"</span>]</span></div>
+                        <div class="code-line"><span class="line-number">56</span><span class="line-content">SKIN_TONE_UNDERTONES = [<span class="string">"Warm"</span>, <span class="string">"Cool"</span>, <span class="string">"Neutral"</span>]</span></div>
+                        <div class="code-line"><span class="line-number">61</span><span class="line-content">BODY_SHAPES = [<span class="string">"Hourglass"</span>, <span class="string">"Pear"</span>, <span class="string">"Inverted Triangle"</span>, <span class="string">"Rectangle"</span>, <span class="string">"Apple"</span>, <span class="string">"Athletic"</span>]</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPart(partNum) {
+            document.querySelectorAll('.part-content').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.part-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById('part' + partNum).classList.add('active');
+            event.target.classList.add('active');
+        }
+        function toggleCard(header) {
+            header.parentElement.classList.toggle('expanded');
+        }
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const term = e.target.value.toLowerCase();
+            document.querySelectorAll('.file-card').forEach(card => {
+                const match = card.textContent.toLowerCase().includes(term);
+                card.style.display = match ? 'block' : 'none';
+                if (match && term) card.classList.add('expanded');
+            });
+        });
+    </script>
+</body>
+</html>
