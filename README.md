@@ -4,16 +4,15 @@
 
 Adorkable AI is a complete, production-quality fashion intelligence web application that combines computer vision, color theory, and weather data to curate personalized outfit recommendations.
 
-## ✨ Features
+## ✨ Features & Core Screens
 
-- 🎨 **Smart Color Matching** — Complementary & analogous color harmony + skin tone flattering recommendations
-- 🌤️ **Weather-Aware Recommendations** — Live weather integration with temperature-appropriate fabrics and layering
-- 👤 **Personalized Profile Analysis** — Skin tone detection (MediaPipe) + body shape analysis
-- 🧠 **AI-Powered Classification** — MobileNetV2-based garment classification (category + style)
-- 📅 **Weekly Outfit Planner** — 7-day planning with weather forecasts
-- 🎯 **Smart Combo Generator** — Find matching pieces for any garment
-- 📊 **Analytics Dashboard** — Wardrobe insights with Plotly visualizations
-- 🔐 **Secure Authentication** — JWT-based user management
+- 👤 **My Profile:** The personalized setup area where the app gets to know the user. Uses MediaPipe to analyze uploaded selfies for skin tone, and gathers body shape details to unlock custom-tailored color palettes.
+- 👕 **My Wardrobe:** The digital closet hub where users view, filter, and manage their uploaded garments. It acts as the foundation for all AI recommendations.
+- 🎨 **Smart Color Matching & AI Classification:** Leverages MobileNetV2 for garment classification and K-Means for extracting dominant colors to pair complementary and analogous harmonies.
+- 🌤️ **Daily Outfit:** A smart, real-time recommendation engine that suggests the perfect outfit for the day, factored around live weather data and temperature.
+- 📅 **Weekly Planner:** A comprehensive 7-day outfit calendar. It syncs with the weekly weather forecast to plan a week’s worth of cohesive, varied outfits.
+- 🎯 **Smart Combo:** An intelligent pairing tool where users select a single garment, and the AI instantly generates complete, color-coordinated outfits around that specific piece.
+- 📊 **Analytics Dashboard:** An interactive visual hub built with Plotly that provides deep insights into wardrobe combinability, color distributions, and usage frequency.
 
 ## 🏗️ Architecture
 
@@ -43,7 +42,7 @@ Adorkable AI is a complete, production-quality fashion intelligence web applicat
 
 1. **Clone the repository:**
 ```bash
-git clone <repository-url>
+git clone https://github.com/mutahhar-mudassar/Adorkable_AI.git
 cd adorkable_ai
 ```
 
