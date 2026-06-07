@@ -1,9 +1,3 @@
-"""
-Adorkable AI Body Shape Analysis Module
-
-MediaPipe Pose-based body shape classification using shoulder-to-hip
-ratio analysis and waist detection.
-"""
 
 from typing import Dict, Tuple, Optional, List
 from dataclasses import dataclass
