@@ -1,8 +1,4 @@
-"""
-Adorkable AI Authentication Module
 
-JWT-based authentication with user registration and login.
-"""
 
 from datetime import datetime, timedelta
 from typing import Optional
@@ -21,9 +17,6 @@ from backend.database import (
 )
 
 
-# =============================================================================
-# Password Hashing
-# =============================================================================
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
@@ -55,9 +48,6 @@ def verify_password(plain_password: str, hashed_password: str) -> bool:
     return pwd_context.verify(plain_password, hashed_password)
 
 
-# =============================================================================
-# JWT Token Management
-# =============================================================================
 
 security = HTTPBearer()
 
