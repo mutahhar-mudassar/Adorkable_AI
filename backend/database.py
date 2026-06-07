@@ -1,9 +1,4 @@
-"""
-Adorkable AI Database Layer
 
-SQLAlchemy 2.0 async SQLite database with ORM models for users,
-wardrobe items, profiles, and outfit logs.
-"""
 
 import asyncio
 from datetime import datetime, date
