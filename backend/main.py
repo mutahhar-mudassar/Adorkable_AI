@@ -1,8 +1,4 @@
-"""
-Adorkable AI - FastAPI Application Entry Point
 
-Main FastAPI application with all routers and startup configuration.
-"""
 
 import os
 import logging
@@ -35,11 +31,6 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
-
-
-# =============================================================================
-# Lifecycle Management
-# =============================================================================
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
